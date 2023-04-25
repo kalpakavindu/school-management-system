@@ -84,10 +84,10 @@
     <Compile Include="TeacherDetailsModal.Designer.cs">
       <DependentUpon>TeacherDetailsModal.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherStudentScreen.cs">
+    <Compile Include="Screens\Teacher\TeacherStudentScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherStudentScreen.Designer.cs">
+    <Compile Include="Screens\Teacher\TeacherStudentScreen.Designer.cs">
       <DependentUpon>TeacherStudentScreen.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AssignmentDetailsModal.resx">
@@ -118,7 +118,7 @@
     <EmbeddedResource Include="TeacherDetailsModal.resx">
       <DependentUpon>TeacherDetailsModal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherStudentScreen.resx">
+    <EmbeddedResource Include="Screens\Teacher\TeacherStudentScreen.resx">
       <DependentUpon>TeacherStudentScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
