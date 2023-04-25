@@ -233,6 +233,16 @@ namespace school_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap book_open_fill_darkcyan {
+            get {
+                object obj = ResourceManager.GetObject("book-open-fill-darkcyan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap book_open_fill_light {
             get {
                 object obj = ResourceManager.GetObject("book-open-fill-light", resourceCulture);
@@ -373,6 +383,16 @@ namespace school_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap graduation_cap_fill_darkcyan {
+            get {
+                object obj = ResourceManager.GetObject("graduation-cap-fill-darkcyan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap graduation_cap_fill_light {
             get {
                 object obj = ResourceManager.GetObject("graduation-cap-fill-light", resourceCulture);
@@ -406,6 +426,16 @@ namespace school_management_system.Properties {
         internal static System.Drawing.Bitmap logout_circle_line_dark {
             get {
                 object obj = ResourceManager.GetObject("logout-circle-line-dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logout_circle_line_darkcyan {
+            get {
+                object obj = ResourceManager.GetObject("logout-circle-line-darkcyan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +496,16 @@ namespace school_management_system.Properties {
         internal static System.Drawing.Bitmap user_fill_dark {
             get {
                 object obj = ResourceManager.GetObject("user-fill-dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_fill_darkcyan {
+            get {
+                object obj = ResourceManager.GetObject("user-fill-darkcyan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace school_management_system
 {
-    public partial class AddAssignmentScreen : Form
+    public partial class TeacherDetailsModal : Form
     {
-        public AddAssignmentScreen()
+        public TeacherDetailsModal()
         {
             InitializeComponent();
         }
