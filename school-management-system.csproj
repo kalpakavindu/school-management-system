@@ -46,42 +46,96 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssignmentDetailsModal.cs">
+    <Compile Include="Modals\AddStudentModal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AssignmentDetailsModal.Designer.cs">
+    <Compile Include="Modals\AddStudentModal.Designer.cs">
+      <DependentUpon>AddStudentModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modals\AddTeacherModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\AddTeacherModal.Designer.cs">
+      <DependentUpon>AddTeacherModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modals\AssignmentDetailsModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\AssignmentDetailsModal.Designer.cs">
       <DependentUpon>AssignmentDetailsModal.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginScreen.cs">
+    <Compile Include="Modals\EditStudentModal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginScreen.Designer.cs">
+    <Compile Include="Modals\EditStudentModal.Designer.cs">
+      <DependentUpon>EditStudentModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modals\EditTeacherModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\EditTeacherModal.Designer.cs">
+      <DependentUpon>EditTeacherModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminDashboardScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminDashboardScreen.Designer.cs">
+      <DependentUpon>AdminDashboardScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminStudentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminStudentScreen.Designer.cs">
+      <DependentUpon>AdminStudentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminTeacherScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminTeacherScreen.Designer.cs">
+      <DependentUpon>AdminTeacherScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\LoginScreen.Designer.cs">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StudentDetailsModal.cs">
+    <Compile Include="Modals\StudentDetailsModal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentDetailsModal.Designer.cs">
+    <Compile Include="Modals\StudentDetailsModal.Designer.cs">
       <DependentUpon>StudentDetailsModal.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherAssignmentScreen.cs">
+    <Compile Include="Screens\Student\StudentAssignmentScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherAssignmentScreen.Designer.cs">
+    <Compile Include="Screens\Student\StudentAssignmentScreen.Designer.cs">
+      <DependentUpon>StudentAssignmentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Student\StudentDashboardScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Student\StudentDashboardScreen.Designer.cs">
+      <DependentUpon>StudentDashboardScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Teacher\TeacherAssignmentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Teacher\TeacherAssignmentScreen.Designer.cs">
       <DependentUpon>TeacherAssignmentScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherDashboardScreen.cs">
+    <Compile Include="Screens\Teacher\TeacherDashboardScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherDashboardScreen.Designer.cs">
+    <Compile Include="Screens\Teacher\TeacherDashboardScreen.Designer.cs">
       <DependentUpon>TeacherDashboardScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherDetailsModal.cs">
+    <Compile Include="Modals\TeacherDetailsModal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherDetailsModal.Designer.cs">
+    <Compile Include="Modals\TeacherDetailsModal.Designer.cs">
       <DependentUpon>TeacherDetailsModal.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\Teacher\TeacherStudentScreen.cs">
@@ -90,10 +144,31 @@
     <Compile Include="Screens\Teacher\TeacherStudentScreen.Designer.cs">
       <DependentUpon>TeacherStudentScreen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AssignmentDetailsModal.resx">
+    <EmbeddedResource Include="Modals\AddStudentModal.resx">
+      <DependentUpon>AddStudentModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\AddTeacherModal.resx">
+      <DependentUpon>AddTeacherModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\AssignmentDetailsModal.resx">
       <DependentUpon>AssignmentDetailsModal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginScreen.resx">
+    <EmbeddedResource Include="Modals\EditStudentModal.resx">
+      <DependentUpon>EditStudentModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\EditTeacherModal.resx">
+      <DependentUpon>EditTeacherModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Admin\AdminDashboardScreen.resx">
+      <DependentUpon>AdminDashboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Admin\AdminStudentScreen.resx">
+      <DependentUpon>AdminStudentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Admin\AdminTeacherScreen.resx">
+      <DependentUpon>AdminTeacherScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -106,16 +181,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="StudentDetailsModal.resx">
+    <EmbeddedResource Include="Modals\StudentDetailsModal.resx">
       <DependentUpon>StudentDetailsModal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherAssignmentScreen.resx">
+    <EmbeddedResource Include="Screens\Student\StudentAssignmentScreen.resx">
+      <DependentUpon>StudentAssignmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Student\StudentDashboardScreen.resx">
+      <DependentUpon>StudentDashboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Teacher\TeacherAssignmentScreen.resx">
       <DependentUpon>TeacherAssignmentScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherDashboardScreen.resx">
+    <EmbeddedResource Include="Screens\Teacher\TeacherDashboardScreen.resx">
       <DependentUpon>TeacherDashboardScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherDetailsModal.resx">
+    <EmbeddedResource Include="Modals\TeacherDetailsModal.resx">
       <DependentUpon>TeacherDetailsModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Teacher\TeacherStudentScreen.resx">
@@ -271,6 +352,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\graduation-cap-fill-darkcyan.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\user-star-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-star-fill-darkcyan.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
