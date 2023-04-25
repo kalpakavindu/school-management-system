@@ -46,14 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AddAssignmentScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AddAssignmentScreen.Designer.cs">
+      <DependentUpon>AddAssignmentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentDetailsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignmentDetailsScreen.Designer.cs">
+      <DependentUpon>AssignmentDetailsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginScreen.Designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentDetailsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDetailsScreen.Designer.cs">
+      <DependentUpon>StudentDetailsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherAssignmentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherAssignmentScreen.Designer.cs">
+      <DependentUpon>TeacherAssignmentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherDashboardScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherDashboardScreen.Designer.cs">
+      <DependentUpon>TeacherDashboardScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherStudentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherStudentScreen.Designer.cs">
+      <DependentUpon>TeacherStudentScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAssignmentScreen.resx">
+      <DependentUpon>AddAssignmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignmentDetailsScreen.resx">
+      <DependentUpon>AssignmentDetailsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +107,20 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StudentDetailsScreen.resx">
+      <DependentUpon>StudentDetailsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherAssignmentScreen.resx">
+      <DependentUpon>TeacherAssignmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherDashboardScreen.resx">
+      <DependentUpon>TeacherDashboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherStudentScreen.resx">
+      <DependentUpon>TeacherStudentScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +133,132 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down-s-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down-s-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-left-s-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-left-s-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-right-s-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-right-s-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up-s-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up-s-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\award-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\award-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-3-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark-3-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-mark-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-mark-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-open-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-bin-6-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-bin-6-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-cloud-2-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-cloud-2-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation-cap-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduation-cap-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-circle-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-circle-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-circle-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-circle-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentation-fill-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentation-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-cloud-2-line-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-cloud-2-line-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-fill-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-fill-dark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
