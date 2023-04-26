@@ -34,7 +34,6 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,6 +55,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -117,16 +118,6 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(276, 24);
             this.textBox14.TabIndex = 89;
-            // 
-            // textBox15
-            // 
-            this.textBox15.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(36, 159);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(276, 24);
-            this.textBox15.TabIndex = 88;
             // 
             // textBox16
             // 
@@ -199,7 +190,7 @@
             "Class 4"});
             this.comboBox1.Location = new System.Drawing.Point(482, 417);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(273, 26);
+            this.comboBox1.Size = new System.Drawing.Size(276, 26);
             this.comboBox1.TabIndex = 108;
             // 
             // label3
@@ -223,9 +214,9 @@
             this.button1.ForeColor = System.Drawing.Color.Azure;
             this.button1.Location = new System.Drawing.Point(482, 458);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(276, 42);
+            this.button1.Size = new System.Drawing.Size(126, 42);
             this.button1.TabIndex = 106;
-            this.button1.Text = "Add Student";
+            this.button1.Text = "Update Student";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox11
@@ -235,7 +226,7 @@
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.Location = new System.Drawing.Point(479, 339);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(276, 24);
+            this.textBox11.Size = new System.Drawing.Size(279, 24);
             this.textBox11.TabIndex = 105;
             // 
             // textBox10
@@ -245,7 +236,7 @@
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox10.Location = new System.Drawing.Point(479, 288);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(276, 24);
+            this.textBox10.Size = new System.Drawing.Size(279, 24);
             this.textBox10.TabIndex = 104;
             // 
             // textBox9
@@ -255,7 +246,7 @@
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(479, 236);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(276, 24);
+            this.textBox9.Size = new System.Drawing.Size(279, 24);
             this.textBox9.TabIndex = 103;
             // 
             // textBox8
@@ -348,12 +339,42 @@
             this.label12.TabIndex = 94;
             this.label12.Text = "Father\'s Name";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBox2.Location = new System.Drawing.Point(36, 159);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(276, 26);
+            this.comboBox2.TabIndex = 109;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Salmon;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.Location = new System.Drawing.Point(632, 458);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(126, 42);
+            this.button2.TabIndex = 110;
+            this.button2.Text = "Delete Student";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // EditStudentModal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 534);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
@@ -374,7 +395,6 @@
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label7);
@@ -397,7 +417,6 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
@@ -419,5 +438,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button2;
     }
 }

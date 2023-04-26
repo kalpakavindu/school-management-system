@@ -76,6 +76,12 @@
     <Compile Include="Modals\EditTeacherModal.Designer.cs">
       <DependentUpon>EditTeacherModal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Admin\AdminClassScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminClassScreen.Designer.cs">
+      <DependentUpon>AdminClassScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Admin\AdminDashboardScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="Screens\Admin\AdminStudentScreen.Designer.cs">
       <DependentUpon>AdminStudentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminSubjectScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Admin\AdminSubjectScreen.Designer.cs">
+      <DependentUpon>AdminSubjectScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\Admin\AdminTeacherScreen.cs">
       <SubType>Form</SubType>
@@ -165,11 +177,17 @@
     <EmbeddedResource Include="Modals\EditTeacherModal.resx">
       <DependentUpon>EditTeacherModal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Admin\AdminClassScreen.resx">
+      <DependentUpon>AdminClassScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Admin\AdminDashboardScreen.resx">
       <DependentUpon>AdminDashboardScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Admin\AdminStudentScreen.resx">
       <DependentUpon>AdminStudentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Admin\AdminSubjectScreen.resx">
+      <DependentUpon>AdminSubjectScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Admin\AdminTeacherScreen.resx">
       <DependentUpon>AdminTeacherScreen.cs</DependentUpon>
@@ -362,12 +380,17 @@
   <ItemGroup>
     <None Include="Resources\graduation-cap-fill-darkcyan.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\community-line-dark.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-star-fill-dark.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-star-fill-darkcyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-paper-2-line-dark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

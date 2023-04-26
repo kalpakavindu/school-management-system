@@ -293,6 +293,16 @@ namespace school_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap community_line_dark {
+            get {
+                object obj = ResourceManager.GetObject("community-line-dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dashboard_fill_dark {
             get {
                 object obj = ResourceManager.GetObject("dashboard-fill-dark", resourceCulture);
@@ -366,6 +376,16 @@ namespace school_management_system.Properties {
         internal static System.Drawing.Bitmap edit_fill_light {
             get {
                 object obj = ResourceManager.GetObject("edit-fill-light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_paper_2_line_dark {
+            get {
+                object obj = ResourceManager.GetObject("file-paper-2-line-dark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
