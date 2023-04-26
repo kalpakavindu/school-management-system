@@ -16,7 +16,7 @@ namespace school_management_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Screens.SignupScreen());
+            Application.Run(new Screens.Admin.AdminStudentScreen());
         }
     }
 }

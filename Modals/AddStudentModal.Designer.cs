@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.student_mother_contact_in = new System.Windows.Forms.TextBox();
+            this.student_mother_work_in = new System.Windows.Forms.TextBox();
+            this.student_mother_name_in = new System.Windows.Forms.TextBox();
+            this.student_father_contact_in = new System.Windows.Forms.TextBox();
+            this.student_father_work_in = new System.Windows.Forms.TextBox();
+            this.student_father_name_in = new System.Windows.Forms.TextBox();
+            this.student_home_in = new System.Windows.Forms.TextBox();
+            this.student_contact_in = new System.Windows.Forms.TextBox();
+            this.student_mail_in = new System.Windows.Forms.TextBox();
+            this.student_name_in = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -50,114 +50,114 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.add_student = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.student_dob_in = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.student_class_in = new System.Windows.Forms.ComboBox();
+            this.student_gender_in = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // textBox11
+            // student_mother_contact_in
             // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(487, 332);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(276, 24);
-            this.textBox11.TabIndex = 56;
+            this.student_mother_contact_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_mother_contact_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_mother_contact_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_mother_contact_in.Location = new System.Drawing.Point(487, 332);
+            this.student_mother_contact_in.Name = "student_mother_contact_in";
+            this.student_mother_contact_in.Size = new System.Drawing.Size(276, 24);
+            this.student_mother_contact_in.TabIndex = 56;
             // 
-            // textBox10
+            // student_mother_work_in
             // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(487, 281);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(276, 24);
-            this.textBox10.TabIndex = 55;
+            this.student_mother_work_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_mother_work_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_mother_work_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_mother_work_in.Location = new System.Drawing.Point(487, 281);
+            this.student_mother_work_in.Name = "student_mother_work_in";
+            this.student_mother_work_in.Size = new System.Drawing.Size(276, 24);
+            this.student_mother_work_in.TabIndex = 55;
             // 
-            // textBox9
+            // student_mother_name_in
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(487, 229);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(276, 24);
-            this.textBox9.TabIndex = 54;
+            this.student_mother_name_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_mother_name_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_mother_name_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_mother_name_in.Location = new System.Drawing.Point(487, 229);
+            this.student_mother_name_in.Name = "student_mother_name_in";
+            this.student_mother_name_in.Size = new System.Drawing.Size(276, 24);
+            this.student_mother_name_in.TabIndex = 54;
             // 
-            // textBox8
+            // student_father_contact_in
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(490, 152);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(276, 24);
-            this.textBox8.TabIndex = 53;
+            this.student_father_contact_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_father_contact_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_father_contact_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_father_contact_in.Location = new System.Drawing.Point(490, 152);
+            this.student_father_contact_in.Name = "student_father_contact_in";
+            this.student_father_contact_in.Size = new System.Drawing.Size(276, 24);
+            this.student_father_contact_in.TabIndex = 53;
             // 
-            // textBox7
+            // student_father_work_in
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(490, 98);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(276, 24);
-            this.textBox7.TabIndex = 52;
+            this.student_father_work_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_father_work_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_father_work_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_father_work_in.Location = new System.Drawing.Point(490, 98);
+            this.student_father_work_in.Name = "student_father_work_in";
+            this.student_father_work_in.Size = new System.Drawing.Size(276, 24);
+            this.student_father_work_in.TabIndex = 52;
             // 
-            // textBox6
+            // student_father_name_in
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(490, 47);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(276, 24);
-            this.textBox6.TabIndex = 51;
+            this.student_father_name_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_father_name_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_father_name_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_father_name_in.Location = new System.Drawing.Point(490, 47);
+            this.student_father_name_in.Name = "student_father_name_in";
+            this.student_father_name_in.Size = new System.Drawing.Size(276, 24);
+            this.student_father_name_in.TabIndex = 51;
             // 
-            // textBox5
+            // student_home_in
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(36, 390);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(276, 103);
-            this.textBox5.TabIndex = 50;
+            this.student_home_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_home_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_home_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_home_in.Location = new System.Drawing.Point(36, 390);
+            this.student_home_in.Multiline = true;
+            this.student_home_in.Name = "student_home_in";
+            this.student_home_in.Size = new System.Drawing.Size(276, 103);
+            this.student_home_in.TabIndex = 50;
             // 
-            // textBox4
+            // student_contact_in
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(36, 335);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 24);
-            this.textBox4.TabIndex = 49;
+            this.student_contact_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_contact_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_contact_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_contact_in.Location = new System.Drawing.Point(36, 335);
+            this.student_contact_in.Name = "student_contact_in";
+            this.student_contact_in.Size = new System.Drawing.Size(276, 24);
+            this.student_contact_in.TabIndex = 49;
             // 
-            // textBox3
+            // student_mail_in
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(36, 285);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(276, 24);
-            this.textBox3.TabIndex = 48;
+            this.student_mail_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_mail_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_mail_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_mail_in.Location = new System.Drawing.Point(36, 285);
+            this.student_mail_in.Name = "student_mail_in";
+            this.student_mail_in.Size = new System.Drawing.Size(276, 24);
+            this.student_mail_in.TabIndex = 48;
             // 
-            // textBox1
+            // student_name_in
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(36, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 24);
-            this.textBox1.TabIndex = 46;
+            this.student_name_in.BackColor = System.Drawing.SystemColors.Window;
+            this.student_name_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.student_name_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_name_in.Location = new System.Drawing.Point(36, 102);
+            this.student_name_in.Name = "student_name_in";
+            this.student_name_in.Size = new System.Drawing.Size(276, 24);
+            this.student_name_in.TabIndex = 46;
             // 
             // label22
             // 
@@ -280,21 +280,22 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "Add New Student";
             // 
-            // button1
+            // add_student
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(490, 451);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(276, 42);
-            this.button1.TabIndex = 57;
-            this.button1.Text = "Add Student";
-            this.button1.UseVisualStyleBackColor = false;
+            this.add_student.BackColor = System.Drawing.Color.CadetBlue;
+            this.add_student.FlatAppearance.BorderSize = 0;
+            this.add_student.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.add_student.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.add_student.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_student.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_student.ForeColor = System.Drawing.Color.Azure;
+            this.add_student.Location = new System.Drawing.Point(490, 451);
+            this.add_student.Name = "add_student";
+            this.add_student.Size = new System.Drawing.Size(276, 42);
+            this.add_student.TabIndex = 57;
+            this.add_student.Text = "Add Student";
+            this.add_student.UseVisualStyleBackColor = false;
+            this.add_student.Click += new System.EventHandler(this.add_student_Click);
             // 
             // label1
             // 
@@ -306,13 +307,13 @@
             this.label1.TabIndex = 58;
             this.label1.Text = "Date of Birth";
             // 
-            // dateTimePicker1
+            // student_dob_in
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(36, 204);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(276, 22);
-            this.dateTimePicker1.TabIndex = 59;
+            this.student_dob_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_dob_in.Location = new System.Drawing.Point(36, 204);
+            this.student_dob_in.Name = "student_dob_in";
+            this.student_dob_in.Size = new System.Drawing.Size(276, 22);
+            this.student_dob_in.TabIndex = 59;
             // 
             // label5
             // 
@@ -324,31 +325,31 @@
             this.label5.TabIndex = 60;
             this.label5.Text = "Class";
             // 
-            // comboBox1
+            // student_class_in
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.student_class_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_class_in.FormattingEnabled = true;
+            this.student_class_in.Items.AddRange(new object[] {
             "Class 1",
             "Class 2",
             "Class 3",
             "Class 4"});
-            this.comboBox1.Location = new System.Drawing.Point(490, 410);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(273, 26);
-            this.comboBox1.TabIndex = 61;
+            this.student_class_in.Location = new System.Drawing.Point(490, 410);
+            this.student_class_in.Name = "student_class_in";
+            this.student_class_in.Size = new System.Drawing.Size(273, 26);
+            this.student_class_in.TabIndex = 61;
             // 
-            // comboBox2
+            // student_gender_in
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.student_gender_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_gender_in.FormattingEnabled = true;
+            this.student_gender_in.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox2.Location = new System.Drawing.Point(36, 152);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(276, 26);
-            this.comboBox2.TabIndex = 92;
+            this.student_gender_in.Location = new System.Drawing.Point(36, 152);
+            this.student_gender_in.Name = "student_gender_in";
+            this.student_gender_in.Size = new System.Drawing.Size(276, 26);
+            this.student_gender_in.TabIndex = 92;
             // 
             // AddStudentModal
             // 
@@ -356,22 +357,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 534);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.student_gender_in);
+            this.Controls.Add(this.student_class_in);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.student_dob_in);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.add_student);
+            this.Controls.Add(this.student_mother_contact_in);
+            this.Controls.Add(this.student_mother_work_in);
+            this.Controls.Add(this.student_mother_name_in);
+            this.Controls.Add(this.student_father_contact_in);
+            this.Controls.Add(this.student_father_work_in);
+            this.Controls.Add(this.student_father_name_in);
+            this.Controls.Add(this.student_home_in);
+            this.Controls.Add(this.student_contact_in);
+            this.Controls.Add(this.student_mail_in);
+            this.Controls.Add(this.student_name_in);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label18);
@@ -394,16 +395,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox student_mother_contact_in;
+        private System.Windows.Forms.TextBox student_mother_work_in;
+        private System.Windows.Forms.TextBox student_mother_name_in;
+        private System.Windows.Forms.TextBox student_father_contact_in;
+        private System.Windows.Forms.TextBox student_father_work_in;
+        private System.Windows.Forms.TextBox student_father_name_in;
+        private System.Windows.Forms.TextBox student_home_in;
+        private System.Windows.Forms.TextBox student_contact_in;
+        private System.Windows.Forms.TextBox student_mail_in;
+        private System.Windows.Forms.TextBox student_name_in;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label18;
@@ -416,11 +417,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button add_student;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker student_dob_in;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox student_class_in;
+        private System.Windows.Forms.ComboBox student_gender_in;
     }
 }

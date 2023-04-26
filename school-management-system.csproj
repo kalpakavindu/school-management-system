@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions.cs" />
     <Compile Include="Modals\AddStudentModal.cs">
       <SubType>Form</SubType>
     </Compile>
