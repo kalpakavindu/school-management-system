@@ -49,18 +49,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.upd_class_btn = new System.Windows.Forms.Button();
+            this.del_class_btn = new System.Windows.Forms.Button();
+            this.add_class_btn = new System.Windows.Forms.Button();
+            this.class_details_in = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.class_teacher_in = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.class_name_in = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.class_table = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -76,6 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.class_table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -310,77 +313,79 @@
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 5;
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.Window;
-            this.panel7.Location = new System.Drawing.Point(289, 50);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(563, 556);
-            this.panel7.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(206, 29);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Manage Classes";
-            // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.button3);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.button1);
-            this.panel8.Controls.Add(this.textBox2);
+            this.panel8.Controls.Add(this.upd_class_btn);
+            this.panel8.Controls.Add(this.del_class_btn);
+            this.panel8.Controls.Add(this.add_class_btn);
+            this.panel8.Controls.Add(this.class_details_in);
             this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.comboBox1);
+            this.panel8.Controls.Add(this.class_teacher_in);
             this.panel8.Controls.Add(this.label8);
-            this.panel8.Controls.Add(this.textBox1);
+            this.panel8.Controls.Add(this.class_name_in);
             this.panel8.Controls.Add(this.label7);
             this.panel8.Location = new System.Drawing.Point(14, 50);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(254, 556);
             this.panel8.TabIndex = 2;
             // 
-            // label7
+            // upd_class_btn
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Class Name";
+            this.upd_class_btn.BackColor = System.Drawing.Color.Azure;
+            this.upd_class_btn.FlatAppearance.BorderSize = 2;
+            this.upd_class_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.upd_class_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.upd_class_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upd_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upd_class_btn.ForeColor = System.Drawing.Color.CadetBlue;
+            this.upd_class_btn.Location = new System.Drawing.Point(19, 469);
+            this.upd_class_btn.Name = "upd_class_btn";
+            this.upd_class_btn.Size = new System.Drawing.Size(213, 28);
+            this.upd_class_btn.TabIndex = 10;
+            this.upd_class_btn.Text = "Update Class";
+            this.upd_class_btn.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // del_class_btn
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(19, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 24);
-            this.textBox1.TabIndex = 1;
+            this.del_class_btn.BackColor = System.Drawing.Color.Salmon;
+            this.del_class_btn.FlatAppearance.BorderSize = 0;
+            this.del_class_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.del_class_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.del_class_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_class_btn.Location = new System.Drawing.Point(130, 503);
+            this.del_class_btn.Name = "del_class_btn";
+            this.del_class_btn.Size = new System.Drawing.Size(102, 28);
+            this.del_class_btn.TabIndex = 9;
+            this.del_class_btn.Text = "Remove Class";
+            this.del_class_btn.UseVisualStyleBackColor = false;
             // 
-            // label8
+            // add_class_btn
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 84);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 16);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Class Teacher";
+            this.add_class_btn.BackColor = System.Drawing.Color.CadetBlue;
+            this.add_class_btn.FlatAppearance.BorderSize = 0;
+            this.add_class_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.add_class_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.add_class_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_class_btn.ForeColor = System.Drawing.Color.Azure;
+            this.add_class_btn.Location = new System.Drawing.Point(19, 503);
+            this.add_class_btn.Name = "add_class_btn";
+            this.add_class_btn.Size = new System.Drawing.Size(102, 28);
+            this.add_class_btn.TabIndex = 8;
+            this.add_class_btn.Text = "Add Class";
+            this.add_class_btn.UseVisualStyleBackColor = false;
+            this.add_class_btn.Click += new System.EventHandler(this.add_class_btn_Click);
             // 
-            // comboBox1
+            // class_details_in
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(19, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(213, 26);
-            this.comboBox1.TabIndex = 3;
+            this.class_details_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.class_details_in.Location = new System.Drawing.Point(19, 166);
+            this.class_details_in.Multiline = true;
+            this.class_details_in.Name = "class_details_in";
+            this.class_details_in.Size = new System.Drawing.Size(213, 261);
+            this.class_details_in.TabIndex = 5;
             // 
             // label9
             // 
@@ -392,61 +397,70 @@
             this.label9.TabIndex = 4;
             this.label9.Text = "Details";
             // 
-            // textBox2
+            // class_teacher_in
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(19, 166);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 261);
-            this.textBox2.TabIndex = 5;
+            this.class_teacher_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.class_teacher_in.FormattingEnabled = true;
+            this.class_teacher_in.Location = new System.Drawing.Point(19, 104);
+            this.class_teacher_in.Name = "class_teacher_in";
+            this.class_teacher_in.Size = new System.Drawing.Size(213, 26);
+            this.class_teacher_in.TabIndex = 3;
             // 
-            // button1
+            // label8
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(19, 503);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 28);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add Class";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(16, 84);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(95, 16);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Class Teacher";
             // 
-            // button2
+            // class_name_in
             // 
-            this.button2.BackColor = System.Drawing.Color.Salmon;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(130, 503);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 28);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Remove Class";
-            this.button2.UseVisualStyleBackColor = false;
+            this.class_name_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.class_name_in.Location = new System.Drawing.Point(19, 37);
+            this.class_name_in.Name = "class_name_in";
+            this.class_name_in.Size = new System.Drawing.Size(213, 24);
+            this.class_name_in.TabIndex = 1;
             // 
-            // button3
+            // label7
             // 
-            this.button3.BackColor = System.Drawing.Color.Azure;
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button3.Location = new System.Drawing.Point(19, 469);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(213, 28);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Update Class";
-            this.button3.UseVisualStyleBackColor = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(16, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Class Name";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.Window;
+            this.panel7.Controls.Add(this.class_table);
+            this.panel7.Location = new System.Drawing.Point(289, 50);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(563, 556);
+            this.panel7.TabIndex = 1;
+            // 
+            // class_table
+            // 
+            this.class_table.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.class_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.class_table.Location = new System.Drawing.Point(4, 4);
+            this.class_table.Name = "class_table";
+            this.class_table.Size = new System.Drawing.Size(556, 549);
+            this.class_table.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(9, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(206, 29);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Manage Classes";
             // 
             // AdminClassScreen
             // 
@@ -483,6 +497,8 @@
             this.panel6.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.class_table)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -512,15 +528,16 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox class_teacher_in;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox class_name_in;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button upd_class_btn;
+        private System.Windows.Forms.Button del_class_btn;
+        private System.Windows.Forms.Button add_class_btn;
+        private System.Windows.Forms.TextBox class_details_in;
+        private System.Windows.Forms.DataGridView class_table;
     }
 }

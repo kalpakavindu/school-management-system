@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,16 +50,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.add_teacher_btn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.upd_teacher_btn = new System.Windows.Forms.Button();
+            this.teachers_table = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
@@ -62,10 +69,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.teachers_table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,6 +88,70 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(214, 620);
             this.panel1.TabIndex = 3;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel15.Controls.Add(this.pictureBox13);
+            this.panel15.Controls.Add(this.label17);
+            this.panel15.Location = new System.Drawing.Point(0, 285);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(214, 44);
+            this.panel15.TabIndex = 7;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox13.InitialImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
+            this.pictureBox13.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox13.TabIndex = 2;
+            this.pictureBox13.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(139, 13);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 18);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Subjects";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel14.Controls.Add(this.pictureBox12);
+            this.panel14.Controls.Add(this.label16);
+            this.panel14.Location = new System.Drawing.Point(0, 235);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(214, 44);
+            this.panel14.TabIndex = 6;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::school_management_system.Properties.Resources.community_line_dark;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox12.InitialImage = global::school_management_system.Properties.Resources.community_line_dark;
+            this.pictureBox12.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox12.TabIndex = 2;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(142, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(62, 18);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Classes";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel5
             // 
@@ -227,7 +296,8 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.button1);
+            this.panel6.Controls.Add(this.upd_teacher_btn);
+            this.panel6.Controls.Add(this.add_teacher_btn);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
@@ -236,25 +306,27 @@
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 5;
             // 
-            // button1
+            // add_teacher_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(684, 567);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 41);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add New Teacher";
-            this.button1.UseVisualStyleBackColor = false;
+            this.add_teacher_btn.BackColor = System.Drawing.Color.CadetBlue;
+            this.add_teacher_btn.FlatAppearance.BorderSize = 0;
+            this.add_teacher_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.add_teacher_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.add_teacher_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_teacher_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_teacher_btn.ForeColor = System.Drawing.Color.Azure;
+            this.add_teacher_btn.Location = new System.Drawing.Point(684, 567);
+            this.add_teacher_btn.Name = "add_teacher_btn";
+            this.add_teacher_btn.Size = new System.Drawing.Size(168, 41);
+            this.add_teacher_btn.TabIndex = 2;
+            this.add_teacher_btn.Text = "Add New Teacher";
+            this.add_teacher_btn.UseVisualStyleBackColor = false;
+            this.add_teacher_btn.Click += new System.EventHandler(this.add_teacher_btn_Click);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Window;
+            this.panel7.Controls.Add(this.teachers_table);
             this.panel7.Location = new System.Drawing.Point(14, 50);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(838, 501);
@@ -270,69 +342,38 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Manage Teachers";
             // 
-            // panel15
+            // upd_teacher_btn
             // 
-            this.panel15.BackColor = System.Drawing.Color.CadetBlue;
-            this.panel15.Controls.Add(this.pictureBox13);
-            this.panel15.Controls.Add(this.label17);
-            this.panel15.Location = new System.Drawing.Point(0, 285);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(214, 44);
-            this.panel15.TabIndex = 7;
+            this.upd_teacher_btn.BackColor = System.Drawing.Color.Azure;
+            this.upd_teacher_btn.FlatAppearance.BorderSize = 2;
+            this.upd_teacher_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.upd_teacher_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.upd_teacher_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upd_teacher_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upd_teacher_btn.ForeColor = System.Drawing.Color.CadetBlue;
+            this.upd_teacher_btn.Location = new System.Drawing.Point(495, 567);
+            this.upd_teacher_btn.Name = "upd_teacher_btn";
+            this.upd_teacher_btn.Size = new System.Drawing.Size(168, 41);
+            this.upd_teacher_btn.TabIndex = 3;
+            this.upd_teacher_btn.Text = "Update Teacher";
+            this.upd_teacher_btn.UseVisualStyleBackColor = false;
             // 
-            // pictureBox13
+            // teachers_table
             // 
-            this.pictureBox13.BackgroundImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox13.InitialImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
-            this.pictureBox13.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox13.TabIndex = 2;
-            this.pictureBox13.TabStop = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(139, 13);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 18);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Subjects";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.CadetBlue;
-            this.panel14.Controls.Add(this.pictureBox12);
-            this.panel14.Controls.Add(this.label16);
-            this.panel14.Location = new System.Drawing.Point(0, 235);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(214, 44);
-            this.panel14.TabIndex = 6;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::school_management_system.Properties.Resources.community_line_dark;
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.InitialImage = global::school_management_system.Properties.Resources.community_line_dark;
-            this.pictureBox12.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox12.TabIndex = 2;
-            this.pictureBox12.TabStop = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(142, 14);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 18);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Classes";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.teachers_table.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.teachers_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.teachers_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.teachers_table.Location = new System.Drawing.Point(4, 4);
+            this.teachers_table.Name = "teachers_table";
+            this.teachers_table.Size = new System.Drawing.Size(831, 494);
+            this.teachers_table.TabIndex = 0;
             // 
             // AdminTeacherScreen
             // 
@@ -347,6 +388,12 @@
             this.Text = "Manage Teachers - School Management System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -361,12 +408,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.teachers_table)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -388,7 +431,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button add_teacher_btn;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel15;
@@ -397,5 +440,7 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button upd_teacher_btn;
+        private System.Windows.Forms.DataGridView teachers_table;
     }
 }

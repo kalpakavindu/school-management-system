@@ -30,50 +30,51 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.upd_subject_btn = new System.Windows.Forms.Button();
+            this.del_subject_btn = new System.Windows.Forms.Button();
+            this.add_subject_btn = new System.Windows.Forms.Button();
+            this.subject_name_in = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.subject_table = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.subject_table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -102,6 +103,17 @@
             this.panel15.Size = new System.Drawing.Size(214, 44);
             this.panel15.TabIndex = 5;
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox13.InitialImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
+            this.pictureBox13.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox13.TabIndex = 2;
+            this.pictureBox13.TabStop = false;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -122,6 +134,17 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(214, 44);
             this.panel14.TabIndex = 4;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::school_management_system.Properties.Resources.community_line_dark;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox12.InitialImage = global::school_management_system.Properties.Resources.community_line_dark;
+            this.pictureBox12.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox12.TabIndex = 2;
+            this.pictureBox12.TabStop = false;
             // 
             // label16
             // 
@@ -145,6 +168,17 @@
             this.panel5.Size = new System.Drawing.Size(214, 44);
             this.panel5.TabIndex = 4;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::school_management_system.Properties.Resources.logout_circle_line_dark;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.InitialImage = global::school_management_system.Properties.Resources.logout_circle_line_dark;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -165,6 +199,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 44);
             this.panel4.TabIndex = 3;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_dark;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.InitialImage = global::school_management_system.Properties.Resources.user_fill_dark;
+            this.pictureBox3.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // label4
             // 
@@ -187,6 +232,17 @@
             this.panel3.Size = new System.Drawing.Size(214, 44);
             this.panel3.TabIndex = 2;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.InitialImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -207,6 +263,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 44);
             this.panel2.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::school_management_system.Properties.Resources.dashboard_fill_dark;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.InitialImage = global::school_management_system.Properties.Resources.dashboard_fill_dark;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -231,72 +298,6 @@
             this.label1.Text = "School Management\r\nSystem";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox13.InitialImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
-            this.pictureBox13.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox13.TabIndex = 2;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::school_management_system.Properties.Resources.community_line_dark;
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.InitialImage = global::school_management_system.Properties.Resources.community_line_dark;
-            this.pictureBox12.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox12.TabIndex = 2;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::school_management_system.Properties.Resources.logout_circle_line_dark;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.InitialImage = global::school_management_system.Properties.Resources.logout_circle_line_dark;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_dark;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.InitialImage = global::school_management_system.Properties.Resources.user_fill_dark;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.InitialImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::school_management_system.Properties.Resources.dashboard_fill_dark;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.InitialImage = global::school_management_system.Properties.Resources.dashboard_fill_dark;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.panel8);
@@ -311,91 +312,71 @@
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.button3);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.button1);
-            this.panel8.Controls.Add(this.comboBox1);
-            this.panel8.Controls.Add(this.label8);
-            this.panel8.Controls.Add(this.textBox1);
+            this.panel8.Controls.Add(this.upd_subject_btn);
+            this.panel8.Controls.Add(this.del_subject_btn);
+            this.panel8.Controls.Add(this.add_subject_btn);
+            this.panel8.Controls.Add(this.subject_name_in);
             this.panel8.Controls.Add(this.label7);
             this.panel8.Location = new System.Drawing.Point(14, 50);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(254, 556);
             this.panel8.TabIndex = 2;
             // 
-            // button3
+            // upd_subject_btn
             // 
-            this.button3.BackColor = System.Drawing.Color.Azure;
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button3.Location = new System.Drawing.Point(19, 470);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(213, 28);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Update Subject";
-            this.button3.UseVisualStyleBackColor = false;
+            this.upd_subject_btn.BackColor = System.Drawing.Color.Azure;
+            this.upd_subject_btn.FlatAppearance.BorderSize = 2;
+            this.upd_subject_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.upd_subject_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.upd_subject_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upd_subject_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upd_subject_btn.ForeColor = System.Drawing.Color.CadetBlue;
+            this.upd_subject_btn.Location = new System.Drawing.Point(19, 470);
+            this.upd_subject_btn.Name = "upd_subject_btn";
+            this.upd_subject_btn.Size = new System.Drawing.Size(213, 28);
+            this.upd_subject_btn.TabIndex = 10;
+            this.upd_subject_btn.Text = "Update Subject";
+            this.upd_subject_btn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // del_subject_btn
             // 
-            this.button2.BackColor = System.Drawing.Color.Salmon;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(130, 504);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 28);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = false;
+            this.del_subject_btn.BackColor = System.Drawing.Color.Salmon;
+            this.del_subject_btn.FlatAppearance.BorderSize = 0;
+            this.del_subject_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.del_subject_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.del_subject_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_subject_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_subject_btn.Location = new System.Drawing.Point(130, 504);
+            this.del_subject_btn.Name = "del_subject_btn";
+            this.del_subject_btn.Size = new System.Drawing.Size(102, 28);
+            this.del_subject_btn.TabIndex = 9;
+            this.del_subject_btn.Text = "Remove";
+            this.del_subject_btn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // add_subject_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(19, 504);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 28);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.add_subject_btn.BackColor = System.Drawing.Color.CadetBlue;
+            this.add_subject_btn.FlatAppearance.BorderSize = 0;
+            this.add_subject_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.add_subject_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.add_subject_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_subject_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_subject_btn.ForeColor = System.Drawing.Color.Azure;
+            this.add_subject_btn.Location = new System.Drawing.Point(19, 504);
+            this.add_subject_btn.Name = "add_subject_btn";
+            this.add_subject_btn.Size = new System.Drawing.Size(102, 28);
+            this.add_subject_btn.TabIndex = 8;
+            this.add_subject_btn.Text = "Add";
+            this.add_subject_btn.UseVisualStyleBackColor = false;
+            this.add_subject_btn.Click += new System.EventHandler(this.add_subject_btn_Click);
             // 
-            // comboBox1
+            // subject_name_in
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(19, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(213, 26);
-            this.comboBox1.TabIndex = 3;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 84);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 16);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Subject Teacher";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(19, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 24);
-            this.textBox1.TabIndex = 1;
+            this.subject_name_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subject_name_in.Location = new System.Drawing.Point(19, 37);
+            this.subject_name_in.Name = "subject_name_in";
+            this.subject_name_in.Size = new System.Drawing.Size(213, 24);
+            this.subject_name_in.TabIndex = 1;
             // 
             // label7
             // 
@@ -410,6 +391,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Window;
+            this.panel7.Controls.Add(this.subject_table);
             this.panel7.Location = new System.Drawing.Point(289, 50);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(563, 556);
@@ -424,6 +406,15 @@
             this.label6.Size = new System.Drawing.Size(214, 29);
             this.label6.TabIndex = 0;
             this.label6.Text = "Manage Subjects";
+            // 
+            // subject_table
+            // 
+            this.subject_table.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.subject_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.subject_table.Location = new System.Drawing.Point(4, 4);
+            this.subject_table.Name = "subject_table";
+            this.subject_table.Size = new System.Drawing.Size(556, 549);
+            this.subject_table.TabIndex = 0;
             // 
             // AdminSubjectScreen
             // 
@@ -440,26 +431,28 @@
             this.panel1.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.subject_table)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -488,14 +481,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button upd_subject_btn;
+        private System.Windows.Forms.Button del_subject_btn;
+        private System.Windows.Forms.Button add_subject_btn;
+        private System.Windows.Forms.TextBox subject_name_in;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView subject_table;
     }
 }

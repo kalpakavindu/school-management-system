@@ -25,5 +25,17 @@ namespace school_management_system.Screens.Admin
             string query = "SELECT * FROM StudentTable";
             students_table.DataSource = connection.GetData(query);
         }
+
+        private void show_add_student_btn_Click(object sender, EventArgs e)
+        {
+            Modals.AddStudentModal addStudentModal = new Modals.AddStudentModal();
+            addStudentModal.FormClosed += addStudentModal_Closed;
+            addStudentModal.ShowDialog();
+        }
+
+        private void addStudentModal_Closed(object sender,FormClosedEventArgs e)
+        {
+            _loadStudents();
+        }
     }
 }
