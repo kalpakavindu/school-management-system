@@ -56,9 +56,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.close_btn = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pass = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.total_assignments = new System.Windows.Forms.Label();
@@ -87,8 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close_btn)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel13.SuspendLayout();
@@ -145,6 +140,7 @@
             this.logout_label.TabIndex = 0;
             this.logout_label.Text = "Logout";
             this.logout_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_label.Click += new System.EventHandler(this.logout_label_Click);
             // 
             // panel4
             // 
@@ -410,45 +406,10 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Wheat;
-            this.panel9.Controls.Add(this.pictureBox8);
-            this.panel9.Controls.Add(this.pass);
-            this.panel9.Controls.Add(this.label12);
             this.panel9.Location = new System.Drawing.Point(594, 148);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(258, 131);
             this.panel9.TabIndex = 12;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = global::school_management_system.Properties.Resources.bar_chart_fill_dark;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox8.Location = new System.Drawing.Point(16, 50);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(72, 63);
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pass
-            // 
-            this.pass.AutoSize = true;
-            this.pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass.ForeColor = System.Drawing.Color.Chocolate;
-            this.pass.Location = new System.Drawing.Point(132, 58);
-            this.pass.Name = "pass";
-            this.pass.Size = new System.Drawing.Size(96, 55);
-            this.pass.TabIndex = 1;
-            this.pass.Text = "0%";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(12, 13);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(130, 20);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Pass Percentage";
             // 
             // panel8
             // 
@@ -565,6 +526,7 @@
             this.logout_btn.TabIndex = 0;
             this.logout_btn.Text = "Logout";
             this.logout_btn.UseVisualStyleBackColor = false;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // panel10
             // 
@@ -637,9 +599,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close_btn)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -695,9 +654,6 @@
         private System.Windows.Forms.Label total_assignments;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label pass;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox close_btn;
     }
 }

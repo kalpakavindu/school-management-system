@@ -38,20 +38,6 @@ namespace school_management_system
                 query = $"SELECT * FROM AssignmentTable WHERE teacher_id={_teacher_id}";
                 DataTable assignmentData = connection.GetData(query);
                 total_assignments.Text = assignmentData.Rows.Count.ToString();
-
-                foreach(DataRow r in assignmentData.Rows ) 
-                {
-                    query = $"SELECT * FROM AnswerTable WHERE assignment_id={(int)r["id"]}";
-                    DataTable answerData = connection.GetData(query);
-                    foreach(DataRow r2 in answerData.Rows)
-                    {
-                        if ((string)r2["grade"] == "A")
-                        {
-                            totalAs += 1;
-                        }
-                    }
-                }
-                pass.Text = $"{(totalAs / totalStudents) * 100}%";
             }
             catch(Exception ex)
             {
@@ -95,6 +81,20 @@ namespace school_management_system
         {
             TeacherAssignmentScreen assignmentScreen = new TeacherAssignmentScreen(_teacher_id);
             assignmentScreen.Show();
+            this.Close();
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
+            this.Close();
+        }
+
+        private void logout_label_Click(object sender, EventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
             this.Close();
         }
     }

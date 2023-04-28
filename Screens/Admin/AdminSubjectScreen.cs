@@ -155,5 +155,12 @@ namespace school_management_system.Screens.Admin
         {
             Application.Exit();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
+            this.Close();
+        }
     }
 }

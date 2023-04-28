@@ -190,6 +190,7 @@
             this.logout_label.TabIndex = 0;
             this.logout_label.Text = "Logout";
             this.logout_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_label.Click += new System.EventHandler(this.logout_label_Click);
             // 
             // panel4
             // 

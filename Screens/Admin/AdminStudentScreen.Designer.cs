@@ -190,6 +190,7 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Logout";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel4
             // 

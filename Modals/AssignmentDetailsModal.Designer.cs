@@ -134,6 +134,7 @@
             this.pending_res_table.MultiSelect = false;
             this.pending_res_table.Name = "pending_res_table";
             this.pending_res_table.ReadOnly = true;
+            this.pending_res_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.pending_res_table.Size = new System.Drawing.Size(444, 179);
             this.pending_res_table.TabIndex = 0;
             this.pending_res_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pending_res_table_CellContentClick);
@@ -268,6 +269,7 @@
             this.res_table.MultiSelect = false;
             this.res_table.Name = "res_table";
             this.res_table.ReadOnly = true;
+            this.res_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.res_table.Size = new System.Drawing.Size(444, 172);
             this.res_table.TabIndex = 1;
             this.res_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.res_table_CellContentClick);

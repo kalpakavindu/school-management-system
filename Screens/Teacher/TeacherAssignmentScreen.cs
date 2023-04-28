@@ -136,5 +136,12 @@ namespace school_management_system
             studentScreen.Show();
             this.Close();
         }
+
+        private void logout_label_Click(object sender, EventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
+            this.Close();
+        }
     }
 }

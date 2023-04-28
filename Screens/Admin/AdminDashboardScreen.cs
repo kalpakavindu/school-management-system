@@ -24,7 +24,7 @@ namespace school_management_system.Screens.Admin
         {
             try
             {
-                string query = "SELECT * FROM TeacherTable WHERE status='PANTIONED'";
+                string query = "SELECT * FROM TeacherTable WHERE status='PENTIONED'";
                 DataTable pantionedTeachersData = connection.GetData(query);
                 int pantionedTeachers = pantionedTeachersData.Rows.Count;
                 pantioned_teacher.Text = pantionedTeachers.ToString();
@@ -89,6 +89,20 @@ namespace school_management_system.Screens.Admin
         {
             AdminTeacherScreen adminTeacherScreen = new AdminTeacherScreen();
             adminTeacherScreen.Show();
+            this.Close();
+        }
+
+        private void logout_label_Click(object sender, EventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
+            this.Close();
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
             this.Close();
         }
     }

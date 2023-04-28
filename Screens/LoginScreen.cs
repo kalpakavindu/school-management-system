@@ -60,9 +60,16 @@ namespace school_management_system
                             }
                             else
                             {
-                                TeacherDashboardScreen teacherDashboardScreen = new TeacherDashboardScreen((int)teacherData.Rows[0]["id"]);
-                                teacherDashboardScreen.Show();
-                                this.Hide();
+                                if (password_in.Text == (string)teacherData.Rows[0]["password"])
+                                {
+                                    TeacherDashboardScreen teacherDashboardScreen = new TeacherDashboardScreen((int)teacherData.Rows[0]["id"]);
+                                    teacherDashboardScreen.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("The password you entered is invalid", "Error", MessageBoxButtons.OK);
+                                }
                             }
                         }
                     }
@@ -79,9 +86,16 @@ namespace school_management_system
                         }
                         else
                         {
-                            StudentDashboardScreen studentDashboard = new StudentDashboardScreen();
-                            studentDashboard.Show();
-                            this.Hide();
+                            if (password_in.Text == (string)studentData.Rows[0]["password"])
+                            {
+                                StudentDashboardScreen studentDashboard = new StudentDashboardScreen((int)studentData.Rows[0]["id"]);
+                                studentDashboard.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("The password you entered is invalid", "Error", MessageBoxButtons.OK);
+                            }
                         }
                     }
                 }

@@ -61,7 +61,7 @@ namespace school_management_system.Screens
                         }
                         else
                         {
-                            if (teacherData.Rows[0]["password"] != null) 
+                            if (!teacherData.Rows[0].IsNull("password")) 
                             {
                                 if(MessageBox.Show("You've already registered. Please login.","Already have an account",MessageBoxButtons.OK) == DialogResult.OK)
                                 {
@@ -74,8 +74,9 @@ namespace school_management_system.Screens
                             {
                                 query = $"UPDATE TeacherTable SET password='{pass_in.Text}',status='REGISTERED' WHERE id='{(int)teacherData.Rows[0]["id"]}'";
                                 connection.SetData(query);
-                                TeacherDashboardScreen teacherDashboard = new TeacherDashboardScreen((int)teacherData.Rows[0]["id"]);
-                                teacherDashboard.Show();
+                                MessageBox.Show("Well Done! Now you can login with the password and email you used here.", "Done", MessageBoxButtons.OK);
+                                LoginScreen loginScreen = new LoginScreen();
+                                loginScreen.Show();
                                 this.Close();
                             }
                         }
@@ -84,8 +85,9 @@ namespace school_management_system.Screens
                     {
                         query = $"UPDATE StudentTable SET password='{pass_in.Text}' WHERE id='{(int)studentData.Rows[0]["id"]}'";
                         connection.SetData(query);
-                        StudentDashboardScreen studentDashboard = new StudentDashboardScreen();
-                        studentDashboard.Show();
+                        MessageBox.Show("Well Done! Now you can login with the password and email you used here.", "Done", MessageBoxButtons.OK);
+                        LoginScreen loginScreen = new LoginScreen();
+                        loginScreen.Show();
                         this.Close();
                     }
                 }

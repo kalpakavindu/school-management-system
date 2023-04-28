@@ -223,6 +223,7 @@
             this.logout_label.TabIndex = 0;
             this.logout_label.Text = "Logout";
             this.logout_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_label.Click += new System.EventHandler(this.logout_label_Click);
             // 
             // panel4
             // 
@@ -525,6 +526,7 @@
             this.logout_btn.TabIndex = 0;
             this.logout_btn.Text = "Logout";
             this.logout_btn.UseVisualStyleBackColor = false;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // panel10
             // 

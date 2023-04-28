@@ -130,5 +130,12 @@ namespace school_management_system.Screens.Admin
             adminStudentScreen.Show();
             this.Close();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
+            this.Close();
+        }
     }
 }

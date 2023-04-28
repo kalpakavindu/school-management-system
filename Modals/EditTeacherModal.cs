@@ -43,10 +43,10 @@ namespace school_management_system.Modals
                     return "Registered";
                 case "Registered":
                     return "REGISTERED";
-                case "PANTIONED":
-                    return "Pantioned";
-                case "Pantioned":
-                    return "PANTIONED";
+                case "PENTIONED":
+                    return "Pentioned";
+                case "Pentioned":
+                    return "PENTIONED";
                 case "SUPENDED":
                     return "Suspended";
                 case "Suspended":
