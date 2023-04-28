@@ -31,13 +31,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.logout_label = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.assignments_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.students_lable = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,32 +45,33 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.total_students = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.teacher_name = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.manage_students_btn = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.close_btn = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.pass = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.total_assignments = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.manage_assignments_btn = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.logout_btn = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.profile_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -85,16 +86,17 @@
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).BeginInit();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,7 +117,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.CadetBlue;
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.logout_label);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 576);
             this.panel5.Name = "panel5";
@@ -133,22 +135,22 @@
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
-            // label5
+            // logout_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(150, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 18);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Logout";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_label.AutoSize = true;
+            this.logout_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_label.Location = new System.Drawing.Point(150, 12);
+            this.logout_label.Name = "logout_label";
+            this.logout_label.Size = new System.Drawing.Size(54, 18);
+            this.logout_label.TabIndex = 0;
+            this.logout_label.Text = "Logout";
+            this.logout_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.CadetBlue;
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.assignments_label);
             this.panel4.Location = new System.Drawing.Point(0, 185);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 44);
@@ -165,22 +167,23 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
-            // label4
+            // assignments_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(111, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 18);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Assignments";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.assignments_label.AutoSize = true;
+            this.assignments_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.assignments_label.Location = new System.Drawing.Point(111, 11);
+            this.assignments_label.Name = "assignments_label";
+            this.assignments_label.Size = new System.Drawing.Size(93, 18);
+            this.assignments_label.TabIndex = 0;
+            this.assignments_label.Text = "Assignments";
+            this.assignments_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.assignments_label.Click += new System.EventHandler(this.assignments_label_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.CadetBlue;
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.students_lable);
             this.panel3.Location = new System.Drawing.Point(0, 135);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(214, 44);
@@ -197,16 +200,17 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // label3
+            // students_lable
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(138, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Students";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.students_lable.AutoSize = true;
+            this.students_lable.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.students_lable.Location = new System.Drawing.Point(138, 12);
+            this.students_lable.Name = "students_lable";
+            this.students_lable.Size = new System.Drawing.Size(66, 18);
+            this.students_lable.TabIndex = 0;
+            this.students_lable.Text = "Students";
+            this.students_lable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.students_lable.Click += new System.EventHandler(this.students_lable_Click);
             // 
             // panel2
             // 
@@ -256,7 +260,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 16);
+            this.label6.Location = new System.Drawing.Point(9, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(140, 29);
             this.label6.TabIndex = 0;
@@ -266,7 +270,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.LightGreen;
             this.panel7.Controls.Add(this.pictureBox6);
-            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.total_students);
             this.panel7.Controls.Add(this.label7);
             this.panel7.Location = new System.Drawing.Point(14, 148);
             this.panel7.Name = "panel7";
@@ -283,16 +287,16 @@
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
             // 
-            // label8
+            // total_students
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label8.Location = new System.Drawing.Point(111, 58);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 55);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "40";
+            this.total_students.AutoSize = true;
+            this.total_students.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_students.ForeColor = System.Drawing.Color.DarkGreen;
+            this.total_students.Location = new System.Drawing.Point(124, 58);
+            this.total_students.Name = "total_students";
+            this.total_students.Size = new System.Drawing.Size(52, 55);
+            this.total_students.TabIndex = 1;
+            this.total_students.Text = "0";
             // 
             // label7
             // 
@@ -315,15 +319,15 @@
             this.label13.TabIndex = 4;
             this.label13.Text = "Welcome";
             // 
-            // label14
+            // teacher_name
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(90, 94);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(226, 25);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Mr. Kasun Fernando";
+            this.teacher_name.AutoSize = true;
+            this.teacher_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacher_name.Location = new System.Drawing.Point(90, 94);
+            this.teacher_name.Name = "teacher_name";
+            this.teacher_name.Size = new System.Drawing.Size(165, 25);
+            this.teacher_name.TabIndex = 5;
+            this.teacher_name.Text = "Teacher Name";
             // 
             // label15
             // 
@@ -337,7 +341,7 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel11.Controls.Add(this.pictureBox9);
-            this.panel11.Controls.Add(this.button2);
+            this.panel11.Controls.Add(this.manage_students_btn);
             this.panel11.Location = new System.Drawing.Point(238, 344);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(164, 227);
@@ -353,24 +357,26 @@
             this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
             // 
-            // button2
+            // manage_students_btn
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkCyan;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.button2.Location = new System.Drawing.Point(13, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 41);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Manage Students";
-            this.button2.UseVisualStyleBackColor = false;
+            this.manage_students_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.manage_students_btn.FlatAppearance.BorderSize = 0;
+            this.manage_students_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.manage_students_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.manage_students_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manage_students_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_students_btn.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.manage_students_btn.Location = new System.Drawing.Point(13, 170);
+            this.manage_students_btn.Name = "manage_students_btn";
+            this.manage_students_btn.Size = new System.Drawing.Size(137, 41);
+            this.manage_students_btn.TabIndex = 0;
+            this.manage_students_btn.Text = "Manage Students";
+            this.manage_students_btn.UseVisualStyleBackColor = false;
+            this.manage_students_btn.Click += new System.EventHandler(this.manage_students_btn_Click);
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.close_btn);
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.panel13);
@@ -378,7 +384,7 @@
             this.panel6.Controls.Add(this.panel10);
             this.panel6.Controls.Add(this.panel11);
             this.panel6.Controls.Add(this.label15);
-            this.panel6.Controls.Add(this.label14);
+            this.panel6.Controls.Add(this.teacher_name);
             this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.label6);
@@ -388,162 +394,24 @@
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 1;
             // 
-            // panel13
+            // close_btn
             // 
-            this.panel13.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel13.Controls.Add(this.pictureBox11);
-            this.panel13.Controls.Add(this.button4);
-            this.panel13.Location = new System.Drawing.Point(461, 344);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(164, 227);
-            this.panel13.TabIndex = 10;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = global::school_management_system.Properties.Resources.book_open_fill_darkcyan;
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox11.Location = new System.Drawing.Point(13, 26);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(137, 127);
-            this.pictureBox11.TabIndex = 1;
-            this.pictureBox11.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DarkCyan;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.button4.Location = new System.Drawing.Point(13, 170);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(137, 41);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Assignments";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel12.Controls.Add(this.pictureBox10);
-            this.panel12.Controls.Add(this.button3);
-            this.panel12.Location = new System.Drawing.Point(688, 344);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(164, 227);
-            this.panel12.TabIndex = 9;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::school_management_system.Properties.Resources.logout_circle_line_darkcyan;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox10.Location = new System.Drawing.Point(13, 26);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(137, 127);
-            this.pictureBox10.TabIndex = 1;
-            this.pictureBox10.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DarkCyan;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.button3.Location = new System.Drawing.Point(13, 170);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 41);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Logout";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel10.Controls.Add(this.pictureBox5);
-            this.panel10.Controls.Add(this.button1);
-            this.panel10.Location = new System.Drawing.Point(14, 344);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(164, 227);
-            this.panel10.TabIndex = 9;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_darkcyan;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(13, 26);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(137, 127);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.button1.Location = new System.Drawing.Point(13, 170);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 41);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "See Profile";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.LightYellow;
-            this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.label10);
-            this.panel8.Location = new System.Drawing.Point(277, 148);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(261, 131);
-            this.panel8.TabIndex = 11;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::school_management_system.Properties.Resources.book_mark_line_dark;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(16, 50);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(72, 63);
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label9.Location = new System.Drawing.Point(163, 58);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 55);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "22";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(12, 13);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Total Assignments";
+            this.close_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.close_btn.Image = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.InitialImage = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.Location = new System.Drawing.Point(821, 12);
+            this.close_btn.Name = "close_btn";
+            this.close_btn.Size = new System.Drawing.Size(31, 32);
+            this.close_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_btn.TabIndex = 15;
+            this.close_btn.TabStop = false;
+            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Wheat;
             this.panel9.Controls.Add(this.pictureBox8);
-            this.panel9.Controls.Add(this.label11);
+            this.panel9.Controls.Add(this.pass);
             this.panel9.Controls.Add(this.label12);
             this.panel9.Location = new System.Drawing.Point(594, 148);
             this.panel9.Name = "panel9";
@@ -560,16 +428,16 @@
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
             // 
-            // label11
+            // pass
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Chocolate;
-            this.label11.Location = new System.Drawing.Point(97, 58);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(152, 55);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "100%";
+            this.pass.AutoSize = true;
+            this.pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pass.ForeColor = System.Drawing.Color.Chocolate;
+            this.pass.Location = new System.Drawing.Point(132, 58);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(96, 55);
+            this.pass.TabIndex = 1;
+            this.pass.Text = "0%";
             // 
             // label12
             // 
@@ -582,6 +450,159 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Pass Percentage";
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.LightYellow;
+            this.panel8.Controls.Add(this.pictureBox7);
+            this.panel8.Controls.Add(this.total_assignments);
+            this.panel8.Controls.Add(this.label10);
+            this.panel8.Location = new System.Drawing.Point(277, 148);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(261, 131);
+            this.panel8.TabIndex = 11;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::school_management_system.Properties.Resources.book_mark_line_dark;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(16, 50);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(72, 63);
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
+            // total_assignments
+            // 
+            this.total_assignments.AutoSize = true;
+            this.total_assignments.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_assignments.ForeColor = System.Drawing.Color.Goldenrod;
+            this.total_assignments.Location = new System.Drawing.Point(163, 58);
+            this.total_assignments.Name = "total_assignments";
+            this.total_assignments.Size = new System.Drawing.Size(52, 55);
+            this.total_assignments.TabIndex = 1;
+            this.total_assignments.Text = "0";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label10.Location = new System.Drawing.Point(12, 13);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(140, 20);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Total Assignments";
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel13.Controls.Add(this.pictureBox11);
+            this.panel13.Controls.Add(this.manage_assignments_btn);
+            this.panel13.Location = new System.Drawing.Point(461, 344);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(164, 227);
+            this.panel13.TabIndex = 10;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::school_management_system.Properties.Resources.book_open_fill_darkcyan;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.Location = new System.Drawing.Point(13, 26);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(137, 127);
+            this.pictureBox11.TabIndex = 1;
+            this.pictureBox11.TabStop = false;
+            // 
+            // manage_assignments_btn
+            // 
+            this.manage_assignments_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.manage_assignments_btn.FlatAppearance.BorderSize = 0;
+            this.manage_assignments_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.manage_assignments_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.manage_assignments_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manage_assignments_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_assignments_btn.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.manage_assignments_btn.Location = new System.Drawing.Point(13, 170);
+            this.manage_assignments_btn.Name = "manage_assignments_btn";
+            this.manage_assignments_btn.Size = new System.Drawing.Size(137, 41);
+            this.manage_assignments_btn.TabIndex = 0;
+            this.manage_assignments_btn.Text = "Assignments";
+            this.manage_assignments_btn.UseVisualStyleBackColor = false;
+            this.manage_assignments_btn.Click += new System.EventHandler(this.manage_assignments_btn_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel12.Controls.Add(this.pictureBox10);
+            this.panel12.Controls.Add(this.logout_btn);
+            this.panel12.Location = new System.Drawing.Point(688, 344);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(164, 227);
+            this.panel12.TabIndex = 9;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::school_management_system.Properties.Resources.logout_circle_line_darkcyan;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Location = new System.Drawing.Point(13, 26);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(137, 127);
+            this.pictureBox10.TabIndex = 1;
+            this.pictureBox10.TabStop = false;
+            // 
+            // logout_btn
+            // 
+            this.logout_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.logout_btn.FlatAppearance.BorderSize = 0;
+            this.logout_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.logout_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_btn.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.logout_btn.Location = new System.Drawing.Point(13, 170);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(137, 41);
+            this.logout_btn.TabIndex = 0;
+            this.logout_btn.Text = "Logout";
+            this.logout_btn.UseVisualStyleBackColor = false;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel10.Controls.Add(this.pictureBox5);
+            this.panel10.Controls.Add(this.profile_btn);
+            this.panel10.Location = new System.Drawing.Point(14, 344);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(164, 227);
+            this.panel10.TabIndex = 9;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_darkcyan;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(13, 26);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(137, 127);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // profile_btn
+            // 
+            this.profile_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.profile_btn.FlatAppearance.BorderSize = 0;
+            this.profile_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.profile_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.profile_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.profile_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profile_btn.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.profile_btn.Location = new System.Drawing.Point(13, 170);
+            this.profile_btn.Name = "profile_btn";
+            this.profile_btn.Size = new System.Drawing.Size(137, 41);
+            this.profile_btn.TabIndex = 0;
+            this.profile_btn.Text = "See Profile";
+            this.profile_btn.UseVisualStyleBackColor = false;
+            this.profile_btn.Click += new System.EventHandler(this.profile_btn_Click);
+            // 
             // TeacherDashboardScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -590,7 +611,7 @@
             this.ClientSize = new System.Drawing.Size(1084, 620);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TeacherDashboardScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Teacher\'s Dashboard - School Management System";
@@ -615,18 +636,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -637,44 +659,45 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label logout_label;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label assignments_label;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label students_lable;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label total_students;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label teacher_name;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button manage_students_btn;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button manage_assignments_btn;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button profile_btn;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label total_assignments;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label pass;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox close_btn;
     }
 }

@@ -12,9 +12,90 @@ namespace school_management_system
 {
     public partial class TeacherDashboardScreen : Form
     {
-        public TeacherDashboardScreen()
+        Functions connection;
+        private int _teacher_id;
+
+        public TeacherDashboardScreen(int id)
         {
             InitializeComponent();
+            connection = new Functions();
+            _teacher_id = id;
+            _loadData();
+        }
+
+        private void _loadData()
+        {
+            try 
+            {
+                int totalAs = 0;
+                string query = $"SELECT name FROM TeacherTable WHERE id={_teacher_id}";
+                teacher_name.Text = (string)connection.GetData(query).Rows[0]["name"];
+
+                query = "SELECT * FROM StudentTable";
+                int totalStudents = connection.GetData(query).Rows.Count;
+                total_students.Text = totalStudents.ToString();
+
+                query = $"SELECT * FROM AssignmentTable WHERE teacher_id={_teacher_id}";
+                DataTable assignmentData = connection.GetData(query);
+                total_assignments.Text = assignmentData.Rows.Count.ToString();
+
+                foreach(DataRow r in assignmentData.Rows ) 
+                {
+                    query = $"SELECT * FROM AnswerTable WHERE assignment_id={(int)r["id"]}";
+                    DataTable answerData = connection.GetData(query);
+                    foreach(DataRow r2 in answerData.Rows)
+                    {
+                        if ((string)r2["grade"] == "A")
+                        {
+                            totalAs += 1;
+                        }
+                    }
+                }
+                pass.Text = $"{(totalAs / totalStudents) * 100}%";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Something went wrong", MessageBoxButtons.OK);
+            }
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void manage_students_btn_Click(object sender, EventArgs e)
+        {
+            TeacherStudentScreen studentScreen = new TeacherStudentScreen(_teacher_id);
+            studentScreen.Show();
+            this.Close();
+        }
+
+        private void manage_assignments_btn_Click(object sender, EventArgs e)
+        {
+            TeacherAssignmentScreen assignmentScreen = new TeacherAssignmentScreen(_teacher_id);
+            assignmentScreen.Show();
+            this.Close();
+        }
+
+        private void profile_btn_Click(object sender, EventArgs e)
+        {
+            TeacherDetailsModal detailsModal = new TeacherDetailsModal(_teacher_id);
+            detailsModal.ShowDialog();
+        }
+
+        private void students_lable_Click(object sender, EventArgs e)
+        {
+            TeacherStudentScreen studentScreen = new TeacherStudentScreen(_teacher_id);
+            studentScreen.Show();
+            this.Close();
+        }
+
+        private void assignments_label_Click(object sender, EventArgs e)
+        {
+            TeacherAssignmentScreen assignmentScreen = new TeacherAssignmentScreen(_teacher_id);
+            assignmentScreen.Show();
+            this.Close();
         }
     }
 }

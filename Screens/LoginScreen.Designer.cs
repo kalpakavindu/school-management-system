@@ -180,6 +180,7 @@
             this.goto_signup.TabIndex = 8;
             this.goto_signup.TabStop = true;
             this.goto_signup.Text = "SignUp";
+            this.goto_signup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.goto_signup_LinkClicked);
             // 
             // label7
             // 

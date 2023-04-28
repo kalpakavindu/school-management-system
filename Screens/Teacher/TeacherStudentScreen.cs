@@ -15,46 +15,61 @@ namespace school_management_system
     {
         Functions connection;
         private int _editKey;
+        private int _teacher_id;
 
-        public TeacherStudentScreen()
+        public TeacherStudentScreen(int id)
         {
             InitializeComponent();
             connection = new Functions();
+            _teacher_id = id;
             show_profile_btn.Visible = false;
             _loadStudents();
         }
 
         private void _loadStudents()
         {
-            // get all data from StudentTable
-            string query = "SELECT * FROM StudentTable";
-            DataTable studentData = connection.GetData(query);
-
-            // get all data from ClassTable
-            query = "SELECT * FROM ClassTable";
-            DataTable classData = connection.GetData(query);
-
-            // Add new column to assign class names
-            studentData.Columns.Add("class_name", typeof(string));
-
-            // assign class names into new column
-            for (int i = 0; i < studentData.Rows.Count; i++)
+            try
             {
+                string query = $"SELECT * FROM ClassTable WHERE class_teacher='{_teacher_id}'";
+                DataTable classData = connection.GetData(query);
+
+                // new DataTable for student data
+                DataTable studentData = new DataTable();
+                studentData.Columns.Add("id", typeof(int));
+                studentData.Columns.Add("name", typeof(string));
+                studentData.Columns.Add("gender", typeof(string));
+                studentData.Columns.Add("dob", typeof(string));
+                studentData.Columns.Add("contact_number", typeof(string));
+                studentData.Columns.Add("email_address", typeof(string));
+                studentData.Columns.Add("home_address", typeof(string));
+                studentData.Columns.Add("father_name", typeof(string));
+                studentData.Columns.Add("father_work", typeof(string));
+                studentData.Columns.Add("father_contact", typeof(string));
+                studentData.Columns.Add("mother_name", typeof(string));
+                studentData.Columns.Add("mother_work", typeof(string));
+                studentData.Columns.Add("mother_contact", typeof(string));
+                studentData.Columns.Add("class", typeof(int));
+                studentData.Columns.Add("password", typeof(string));
+
+
                 foreach (DataRow r in classData.Rows)
                 {
-                    if (r["id"].Equals(studentData.Rows[i]["class"]))
-                    {
-                        studentData.Rows[i]["class_name"] = r["name"];
-                    }
+                    query = $"SELECT * FROM StudentTable WHERE class={(int)r["id"]}";
+                    studentData.Merge(connection.GetData(query));
                 }
+
+                // remove unnessecery columns
+                studentData.Columns.Remove("password");
+                studentData.Columns.Remove("class");
+                studentData.Columns.Remove("home_address");
+                studentData.Columns.Remove("father_work");
+                studentData.Columns.Remove("mother_work");
+
+                students_table.DataSource = studentData;
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Something went wrong", MessageBoxButtons.OK);
             }
-
-            //remove unnecessary columns
-            studentData.Columns.Remove("class");
-            studentData.Columns.Remove("password");
-
-            // set datasource to studentData
-            students_table.DataSource = studentData;
         }
 
         private void students_table_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -75,6 +90,25 @@ namespace school_management_system
             _loadStudents();
             show_profile_btn.Visible = false;
             _editKey = 0;
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void dashboard_label_Click(object sender, EventArgs e)
+        {
+            TeacherDashboardScreen dashboardScreen = new TeacherDashboardScreen(_teacher_id);
+            dashboardScreen.Show();
+            this.Close();
+        }
+
+        private void assignment_label_Click(object sender, EventArgs e)
+        {
+            TeacherAssignmentScreen assignmentScreen = new TeacherAssignmentScreen(_teacher_id);
+            assignmentScreen.Show();
+            this.Close();
         }
     }
 }
