@@ -122,5 +122,38 @@ namespace school_management_system.Screens.Admin
                 }
             }
         }
+
+        private void dashboard_label_Click(object sender, EventArgs e)
+        {
+            AdminDashboardScreen adminDashboardScreen = new AdminDashboardScreen();
+            adminDashboardScreen.Show();
+            this.Close();
+        }
+
+        private void students_label_Click(object sender, EventArgs e)
+        {
+            AdminStudentScreen adminStudentScreen = new AdminStudentScreen();
+            adminStudentScreen.Show();
+            this.Close();
+        }
+
+        private void teachers_label_Click(object sender, EventArgs e)
+        {
+            AdminTeacherScreen adminTeacherScreen = new AdminTeacherScreen();
+            adminTeacherScreen.Show();
+            this.Close();
+        }
+
+        private void classes_label_Click(object sender, EventArgs e)
+        {
+            AdminClassScreen adminClassScreen = new AdminClassScreen();
+            adminClassScreen.Show();
+            this.Close();
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

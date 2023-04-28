@@ -31,31 +31,32 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.subject_label = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.classes_label = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.logout_label = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.teacher_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.student_label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.close_btn = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.total_students = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.total_teachers = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -74,7 +75,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.pantioned_teacher = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -91,6 +92,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -127,7 +129,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.CadetBlue;
             this.panel15.Controls.Add(this.pictureBox13);
-            this.panel15.Controls.Add(this.label17);
+            this.panel15.Controls.Add(this.subject_label);
             this.panel15.Location = new System.Drawing.Point(0, 285);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(214, 44);
@@ -144,22 +146,23 @@
             this.pictureBox13.TabIndex = 2;
             this.pictureBox13.TabStop = false;
             // 
-            // label17
+            // subject_label
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(139, 13);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 18);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Subjects";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.subject_label.AutoSize = true;
+            this.subject_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subject_label.Location = new System.Drawing.Point(139, 13);
+            this.subject_label.Name = "subject_label";
+            this.subject_label.Size = new System.Drawing.Size(65, 18);
+            this.subject_label.TabIndex = 0;
+            this.subject_label.Text = "Subjects";
+            this.subject_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.subject_label.Click += new System.EventHandler(this.subject_label_Click);
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.CadetBlue;
             this.panel14.Controls.Add(this.pictureBox12);
-            this.panel14.Controls.Add(this.label16);
+            this.panel14.Controls.Add(this.classes_label);
             this.panel14.Location = new System.Drawing.Point(0, 235);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(214, 44);
@@ -176,22 +179,23 @@
             this.pictureBox12.TabIndex = 2;
             this.pictureBox12.TabStop = false;
             // 
-            // label16
+            // classes_label
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(142, 14);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 18);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Classes";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.classes_label.AutoSize = true;
+            this.classes_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classes_label.Location = new System.Drawing.Point(142, 14);
+            this.classes_label.Name = "classes_label";
+            this.classes_label.Size = new System.Drawing.Size(62, 18);
+            this.classes_label.TabIndex = 0;
+            this.classes_label.Text = "Classes";
+            this.classes_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.classes_label.Click += new System.EventHandler(this.classes_label_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.CadetBlue;
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.logout_label);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 576);
             this.panel5.Name = "panel5";
@@ -209,22 +213,22 @@
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
-            // label5
+            // logout_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(150, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 18);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Logout";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_label.AutoSize = true;
+            this.logout_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_label.Location = new System.Drawing.Point(150, 12);
+            this.logout_label.Name = "logout_label";
+            this.logout_label.Size = new System.Drawing.Size(54, 18);
+            this.logout_label.TabIndex = 0;
+            this.logout_label.Text = "Logout";
+            this.logout_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.CadetBlue;
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.teacher_label);
             this.panel4.Location = new System.Drawing.Point(0, 185);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 44);
@@ -241,22 +245,23 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
-            // label4
+            // teacher_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(134, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 18);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Teachers";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.teacher_label.AutoSize = true;
+            this.teacher_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacher_label.Location = new System.Drawing.Point(134, 13);
+            this.teacher_label.Name = "teacher_label";
+            this.teacher_label.Size = new System.Drawing.Size(70, 18);
+            this.teacher_label.TabIndex = 0;
+            this.teacher_label.Text = "Teachers";
+            this.teacher_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.teacher_label.Click += new System.EventHandler(this.teacher_label_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.CadetBlue;
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.student_label);
             this.panel3.Location = new System.Drawing.Point(0, 135);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(214, 44);
@@ -273,16 +278,17 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // label3
+            // student_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(138, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Students";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.student_label.AutoSize = true;
+            this.student_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_label.Location = new System.Drawing.Point(138, 12);
+            this.student_label.Name = "student_label";
+            this.student_label.Size = new System.Drawing.Size(66, 18);
+            this.student_label.TabIndex = 0;
+            this.student_label.Text = "Students";
+            this.student_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.student_label.Click += new System.EventHandler(this.student_label_Click);
             // 
             // panel2
             // 
@@ -330,6 +336,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.close_btn);
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.panel13);
@@ -347,11 +354,24 @@
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 2;
             // 
+            // close_btn
+            // 
+            this.close_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.close_btn.Image = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.InitialImage = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.Location = new System.Drawing.Point(821, 13);
+            this.close_btn.Name = "close_btn";
+            this.close_btn.Size = new System.Drawing.Size(31, 32);
+            this.close_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_btn.TabIndex = 13;
+            this.close_btn.TabStop = false;
+            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Wheat;
             this.panel9.Controls.Add(this.pictureBox8);
-            this.panel9.Controls.Add(this.label11);
+            this.panel9.Controls.Add(this.total_students);
             this.panel9.Controls.Add(this.label12);
             this.panel9.Location = new System.Drawing.Point(594, 148);
             this.panel9.Name = "panel9";
@@ -368,16 +388,16 @@
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
             // 
-            // label11
+            // total_students
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Chocolate;
-            this.label11.Location = new System.Drawing.Point(97, 58);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(136, 55);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "4680";
+            this.total_students.AutoSize = true;
+            this.total_students.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_students.ForeColor = System.Drawing.Color.Chocolate;
+            this.total_students.Location = new System.Drawing.Point(154, 58);
+            this.total_students.Name = "total_students";
+            this.total_students.Size = new System.Drawing.Size(52, 55);
+            this.total_students.TabIndex = 1;
+            this.total_students.Text = "0";
             // 
             // label12
             // 
@@ -394,7 +414,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.LightYellow;
             this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Controls.Add(this.label9);
+            this.panel8.Controls.Add(this.total_teachers);
             this.panel8.Controls.Add(this.label10);
             this.panel8.Location = new System.Drawing.Point(277, 148);
             this.panel8.Name = "panel8";
@@ -411,16 +431,16 @@
             this.pictureBox7.TabIndex = 2;
             this.pictureBox7.TabStop = false;
             // 
-            // label9
+            // total_teachers
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label9.Location = new System.Drawing.Point(111, 58);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 55);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "128";
+            this.total_teachers.AutoSize = true;
+            this.total_teachers.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_teachers.ForeColor = System.Drawing.Color.Goldenrod;
+            this.total_teachers.Location = new System.Drawing.Point(160, 58);
+            this.total_teachers.Name = "total_teachers";
+            this.total_teachers.Size = new System.Drawing.Size(52, 55);
+            this.total_teachers.TabIndex = 1;
+            this.total_teachers.Text = "0";
             // 
             // label10
             // 
@@ -468,6 +488,7 @@
             this.manage_teachers_btn.TabIndex = 0;
             this.manage_teachers_btn.Text = "Manage Teachers";
             this.manage_teachers_btn.UseVisualStyleBackColor = false;
+            this.manage_teachers_btn.Click += new System.EventHandler(this.manage_teachers_btn_Click);
             // 
             // panel12
             // 
@@ -576,6 +597,7 @@
             this.manage_students_btn.TabIndex = 0;
             this.manage_students_btn.Text = "Manage Students";
             this.manage_students_btn.UseVisualStyleBackColor = false;
+            this.manage_students_btn.Click += new System.EventHandler(this.manage_students_btn_Click);
             // 
             // label15
             // 
@@ -591,9 +613,9 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(90, 94);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(236, 25);
+            this.label14.Size = new System.Drawing.Size(77, 25);
             this.label14.TabIndex = 5;
-            this.label14.Text = "Mr. D. P. Udawaththa";
+            this.label14.Text = "Admin";
             // 
             // label13
             // 
@@ -609,7 +631,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.LightGreen;
             this.panel7.Controls.Add(this.pictureBox6);
-            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.pantioned_teacher);
             this.panel7.Controls.Add(this.label7);
             this.panel7.Location = new System.Drawing.Point(14, 148);
             this.panel7.Name = "panel7";
@@ -626,16 +648,16 @@
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
             // 
-            // label8
+            // pantioned_teacher
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label8.Location = new System.Drawing.Point(106, 58);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 55);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "40";
+            this.pantioned_teacher.AutoSize = true;
+            this.pantioned_teacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pantioned_teacher.ForeColor = System.Drawing.Color.DarkGreen;
+            this.pantioned_teacher.Location = new System.Drawing.Point(122, 58);
+            this.pantioned_teacher.Name = "pantioned_teacher";
+            this.pantioned_teacher.Size = new System.Drawing.Size(52, 55);
+            this.pantioned_teacher.TabIndex = 1;
+            this.pantioned_teacher.Text = "0";
             // 
             // label7
             // 
@@ -666,8 +688,9 @@
             this.ClientSize = new System.Drawing.Size(1084, 620);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminDashboardScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard - School Management System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -691,6 +714,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -717,13 +741,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label logout_label;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label teacher_label;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label student_label;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
@@ -731,11 +755,11 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label total_students;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label total_teachers;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox11;
@@ -754,14 +778,15 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label pantioned_teacher;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label subject_label;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label classes_label;
+        private System.Windows.Forms.PictureBox close_btn;
     }
 }

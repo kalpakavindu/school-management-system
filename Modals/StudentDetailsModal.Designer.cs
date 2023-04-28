@@ -35,25 +35,25 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.father_name = new System.Windows.Forms.TextBox();
+            this.father_work = new System.Windows.Forms.TextBox();
+            this.father_contact = new System.Windows.Forms.TextBox();
+            this.mother_name = new System.Windows.Forms.TextBox();
+            this.mother_work = new System.Windows.Forms.TextBox();
+            this.mother_contact = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.home = new System.Windows.Forms.TextBox();
+            this.contact = new System.Windows.Forms.TextBox();
+            this.mail = new System.Windows.Forms.TextBox();
+            this.gender = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.dob = new System.Windows.Forms.TextBox();
+            this.class_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -128,71 +128,71 @@
             this.label22.TabIndex = 22;
             this.label22.Text = "Mother\'s Contact Number";
             // 
-            // textBox6
+            // father_name
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(481, 39);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(276, 24);
-            this.textBox6.TabIndex = 28;
+            this.father_name.BackColor = System.Drawing.SystemColors.Window;
+            this.father_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.father_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.father_name.Location = new System.Drawing.Point(481, 39);
+            this.father_name.Name = "father_name";
+            this.father_name.ReadOnly = true;
+            this.father_name.Size = new System.Drawing.Size(276, 24);
+            this.father_name.TabIndex = 28;
             // 
-            // textBox7
+            // father_work
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(481, 94);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(276, 24);
-            this.textBox7.TabIndex = 29;
+            this.father_work.BackColor = System.Drawing.SystemColors.Window;
+            this.father_work.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.father_work.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.father_work.Location = new System.Drawing.Point(481, 94);
+            this.father_work.Name = "father_work";
+            this.father_work.ReadOnly = true;
+            this.father_work.Size = new System.Drawing.Size(276, 24);
+            this.father_work.TabIndex = 29;
             // 
-            // textBox8
+            // father_contact
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(481, 152);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(276, 24);
-            this.textBox8.TabIndex = 30;
+            this.father_contact.BackColor = System.Drawing.SystemColors.Window;
+            this.father_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.father_contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.father_contact.Location = new System.Drawing.Point(481, 152);
+            this.father_contact.Name = "father_contact";
+            this.father_contact.ReadOnly = true;
+            this.father_contact.Size = new System.Drawing.Size(276, 24);
+            this.father_contact.TabIndex = 30;
             // 
-            // textBox9
+            // mother_name
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(481, 235);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(276, 24);
-            this.textBox9.TabIndex = 31;
+            this.mother_name.BackColor = System.Drawing.SystemColors.Window;
+            this.mother_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mother_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mother_name.Location = new System.Drawing.Point(481, 235);
+            this.mother_name.Name = "mother_name";
+            this.mother_name.ReadOnly = true;
+            this.mother_name.Size = new System.Drawing.Size(276, 24);
+            this.mother_name.TabIndex = 31;
             // 
-            // textBox10
+            // mother_work
             // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(481, 290);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(276, 24);
-            this.textBox10.TabIndex = 32;
+            this.mother_work.BackColor = System.Drawing.SystemColors.Window;
+            this.mother_work.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mother_work.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mother_work.Location = new System.Drawing.Point(481, 290);
+            this.mother_work.Name = "mother_work";
+            this.mother_work.ReadOnly = true;
+            this.mother_work.Size = new System.Drawing.Size(276, 24);
+            this.mother_work.TabIndex = 32;
             // 
-            // textBox11
+            // mother_contact
             // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(481, 349);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(276, 24);
-            this.textBox11.TabIndex = 33;
+            this.mother_contact.BackColor = System.Drawing.SystemColors.Window;
+            this.mother_contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mother_contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mother_contact.Location = new System.Drawing.Point(481, 349);
+            this.mother_contact.Name = "mother_contact";
+            this.mother_contact.ReadOnly = true;
+            this.mother_contact.Size = new System.Drawing.Size(276, 24);
+            this.mother_contact.TabIndex = 33;
             // 
             // label5
             // 
@@ -204,61 +204,61 @@
             this.label5.TabIndex = 99;
             this.label5.Text = "Date of Birth";
             // 
-            // textBox5
+            // home
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(24, 375);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(276, 117);
-            this.textBox5.TabIndex = 98;
+            this.home.BackColor = System.Drawing.SystemColors.Window;
+            this.home.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.home.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home.Location = new System.Drawing.Point(24, 375);
+            this.home.Multiline = true;
+            this.home.Name = "home";
+            this.home.ReadOnly = true;
+            this.home.Size = new System.Drawing.Size(276, 117);
+            this.home.TabIndex = 98;
             // 
-            // textBox4
+            // contact
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(24, 323);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(276, 24);
-            this.textBox4.TabIndex = 97;
+            this.contact.BackColor = System.Drawing.SystemColors.Window;
+            this.contact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contact.Location = new System.Drawing.Point(24, 323);
+            this.contact.Name = "contact";
+            this.contact.ReadOnly = true;
+            this.contact.Size = new System.Drawing.Size(276, 24);
+            this.contact.TabIndex = 97;
             // 
-            // textBox3
+            // mail
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(24, 272);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(276, 24);
-            this.textBox3.TabIndex = 96;
+            this.mail.BackColor = System.Drawing.SystemColors.Window;
+            this.mail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mail.Location = new System.Drawing.Point(24, 272);
+            this.mail.Name = "mail";
+            this.mail.ReadOnly = true;
+            this.mail.Size = new System.Drawing.Size(276, 24);
+            this.mail.TabIndex = 96;
             // 
-            // textBox2
+            // gender
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(24, 139);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(276, 24);
-            this.textBox2.TabIndex = 95;
+            this.gender.BackColor = System.Drawing.SystemColors.Window;
+            this.gender.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.Location = new System.Drawing.Point(24, 139);
+            this.gender.Name = "gender";
+            this.gender.ReadOnly = true;
+            this.gender.Size = new System.Drawing.Size(276, 24);
+            this.gender.TabIndex = 95;
             // 
-            // textBox1
+            // name
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(24, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(276, 24);
-            this.textBox1.TabIndex = 94;
+            this.name.BackColor = System.Drawing.SystemColors.Window;
+            this.name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Location = new System.Drawing.Point(24, 87);
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Size = new System.Drawing.Size(276, 24);
+            this.name.TabIndex = 94;
             // 
             // label10
             // 
@@ -310,27 +310,27 @@
             this.label3.TabIndex = 89;
             this.label3.Text = "Student Name";
             // 
-            // textBox12
+            // dob
             // 
-            this.textBox12.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(24, 191);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(276, 24);
-            this.textBox12.TabIndex = 100;
+            this.dob.BackColor = System.Drawing.SystemColors.Window;
+            this.dob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dob.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dob.Location = new System.Drawing.Point(24, 191);
+            this.dob.Name = "dob";
+            this.dob.ReadOnly = true;
+            this.dob.Size = new System.Drawing.Size(276, 24);
+            this.dob.TabIndex = 100;
             // 
-            // textBox13
+            // class_name
             // 
-            this.textBox13.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(481, 468);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(276, 24);
-            this.textBox13.TabIndex = 102;
+            this.class_name.BackColor = System.Drawing.SystemColors.Window;
+            this.class_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.class_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.class_name.Location = new System.Drawing.Point(481, 468);
+            this.class_name.Name = "class_name";
+            this.class_name.ReadOnly = true;
+            this.class_name.Size = new System.Drawing.Size(276, 24);
+            this.class_name.TabIndex = 102;
             // 
             // label1
             // 
@@ -348,26 +348,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 534);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.class_name);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.dob);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.home);
+            this.Controls.Add(this.contact);
+            this.Controls.Add(this.mail);
+            this.Controls.Add(this.gender);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.mother_contact);
+            this.Controls.Add(this.mother_work);
+            this.Controls.Add(this.mother_name);
+            this.Controls.Add(this.father_contact);
+            this.Controls.Add(this.father_work);
+            this.Controls.Add(this.father_name);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label18);
@@ -391,25 +391,25 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox father_name;
+        private System.Windows.Forms.TextBox father_work;
+        private System.Windows.Forms.TextBox father_contact;
+        private System.Windows.Forms.TextBox mother_name;
+        private System.Windows.Forms.TextBox mother_work;
+        private System.Windows.Forms.TextBox mother_contact;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox home;
+        private System.Windows.Forms.TextBox contact;
+        private System.Windows.Forms.TextBox mail;
+        private System.Windows.Forms.TextBox gender;
+        private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox dob;
+        private System.Windows.Forms.TextBox class_name;
         private System.Windows.Forms.Label label1;
     }
 }

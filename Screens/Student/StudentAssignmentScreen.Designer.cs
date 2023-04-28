@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -40,6 +44,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -50,8 +56,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.assignments_table = new System.Windows.Forms.DataGridView();
+            this.completed_assignments_table = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -60,7 +66,11 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.assignments_table)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.completed_assignments_table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -198,6 +208,25 @@
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 5;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(326, 284);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(153, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Completed Assignments";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.Window;
+            this.panel3.Controls.Add(this.completed_assignments_table);
+            this.panel3.Location = new System.Drawing.Point(329, 303);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(523, 293);
+            this.panel3.TabIndex = 2;
+            // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -236,7 +265,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(251, 43);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Upload File";
+            this.button2.Text = "Download Assignment";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // textBox2
@@ -299,6 +328,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Window;
+            this.panel7.Controls.Add(this.assignments_table);
             this.panel7.Location = new System.Drawing.Point(329, 48);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(523, 217);
@@ -314,23 +344,67 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Assignments";
             // 
-            // panel3
+            // assignments_table
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Window;
-            this.panel3.Location = new System.Drawing.Point(329, 303);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(523, 293);
-            this.panel3.TabIndex = 2;
+            this.assignments_table.AllowUserToAddRows = false;
+            this.assignments_table.AllowUserToDeleteRows = false;
+            this.assignments_table.AllowUserToResizeRows = false;
+            this.assignments_table.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.assignments_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.assignments_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.assignments_table.DefaultCellStyle = dataGridViewCellStyle4;
+            this.assignments_table.Location = new System.Drawing.Point(4, 4);
+            this.assignments_table.MultiSelect = false;
+            this.assignments_table.Name = "assignments_table";
+            this.assignments_table.ReadOnly = true;
+            this.assignments_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.assignments_table.Size = new System.Drawing.Size(516, 210);
+            this.assignments_table.TabIndex = 0;
             // 
-            // label3
+            // completed_assignments_table
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(326, 284);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Completed Assignments";
+            this.completed_assignments_table.AllowUserToAddRows = false;
+            this.completed_assignments_table.AllowUserToDeleteRows = false;
+            this.completed_assignments_table.AllowUserToResizeRows = false;
+            this.completed_assignments_table.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.completed_assignments_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.completed_assignments_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.completed_assignments_table.DefaultCellStyle = dataGridViewCellStyle2;
+            this.completed_assignments_table.Location = new System.Drawing.Point(4, 3);
+            this.completed_assignments_table.MultiSelect = false;
+            this.completed_assignments_table.Name = "completed_assignments_table";
+            this.completed_assignments_table.ReadOnly = true;
+            this.completed_assignments_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.completed_assignments_table.Size = new System.Drawing.Size(516, 287);
+            this.completed_assignments_table.TabIndex = 1;
             // 
             // StudentAssignmentScreen
             // 
@@ -355,8 +429,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.assignments_table)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.completed_assignments_table)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -387,5 +465,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView assignments_table;
+        private System.Windows.Forms.DataGridView completed_assignments_table;
     }
 }

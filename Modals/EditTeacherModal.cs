@@ -108,8 +108,6 @@ namespace school_management_system.Modals
             {
                 MessageBox.Show(ex.Message, "Something went wrong", MessageBoxButtons.OK);
             }
-
-
         }
 
         private void upd_btn_Click(object sender, EventArgs e)

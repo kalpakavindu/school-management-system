@@ -33,24 +33,25 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.subject_label = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.classes_label = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.logout_label = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.student_label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dashboard_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.close_btn = new System.Windows.Forms.PictureBox();
             this.upd_teacher_btn = new System.Windows.Forms.Button();
             this.add_teacher_btn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -70,6 +71,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teachers_table)).BeginInit();
             this.SuspendLayout();
@@ -94,7 +96,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.CadetBlue;
             this.panel15.Controls.Add(this.pictureBox13);
-            this.panel15.Controls.Add(this.label17);
+            this.panel15.Controls.Add(this.subject_label);
             this.panel15.Location = new System.Drawing.Point(0, 285);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(214, 44);
@@ -111,22 +113,23 @@
             this.pictureBox13.TabIndex = 2;
             this.pictureBox13.TabStop = false;
             // 
-            // label17
+            // subject_label
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(139, 13);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 18);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Subjects";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.subject_label.AutoSize = true;
+            this.subject_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subject_label.Location = new System.Drawing.Point(139, 13);
+            this.subject_label.Name = "subject_label";
+            this.subject_label.Size = new System.Drawing.Size(65, 18);
+            this.subject_label.TabIndex = 0;
+            this.subject_label.Text = "Subjects";
+            this.subject_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.subject_label.Click += new System.EventHandler(this.subject_label_Click);
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.CadetBlue;
             this.panel14.Controls.Add(this.pictureBox12);
-            this.panel14.Controls.Add(this.label16);
+            this.panel14.Controls.Add(this.classes_label);
             this.panel14.Location = new System.Drawing.Point(0, 235);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(214, 44);
@@ -143,22 +146,23 @@
             this.pictureBox12.TabIndex = 2;
             this.pictureBox12.TabStop = false;
             // 
-            // label16
+            // classes_label
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(142, 14);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 18);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Classes";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.classes_label.AutoSize = true;
+            this.classes_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classes_label.Location = new System.Drawing.Point(142, 14);
+            this.classes_label.Name = "classes_label";
+            this.classes_label.Size = new System.Drawing.Size(62, 18);
+            this.classes_label.TabIndex = 0;
+            this.classes_label.Text = "Classes";
+            this.classes_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.classes_label.Click += new System.EventHandler(this.classes_label_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.CadetBlue;
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.logout_label);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 576);
             this.panel5.Name = "panel5";
@@ -176,16 +180,16 @@
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
-            // label5
+            // logout_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(150, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 18);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Logout";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_label.AutoSize = true;
+            this.logout_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_label.Location = new System.Drawing.Point(150, 12);
+            this.logout_label.Name = "logout_label";
+            this.logout_label.Size = new System.Drawing.Size(54, 18);
+            this.logout_label.TabIndex = 0;
+            this.logout_label.Text = "Logout";
+            this.logout_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel4
             // 
@@ -223,7 +227,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.CadetBlue;
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.student_label);
             this.panel3.Location = new System.Drawing.Point(0, 135);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(214, 44);
@@ -240,22 +244,23 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // label3
+            // student_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(138, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Students";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.student_label.AutoSize = true;
+            this.student_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_label.Location = new System.Drawing.Point(138, 12);
+            this.student_label.Name = "student_label";
+            this.student_label.Size = new System.Drawing.Size(66, 18);
+            this.student_label.TabIndex = 0;
+            this.student_label.Text = "Students";
+            this.student_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.student_label.Click += new System.EventHandler(this.student_label_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CadetBlue;
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.dashboard_label);
             this.panel2.Location = new System.Drawing.Point(0, 85);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 44);
@@ -272,16 +277,17 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // dashboard_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(123, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Dashboard";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dashboard_label.AutoSize = true;
+            this.dashboard_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_label.Location = new System.Drawing.Point(123, 13);
+            this.dashboard_label.Name = "dashboard_label";
+            this.dashboard_label.Size = new System.Drawing.Size(81, 18);
+            this.dashboard_label.TabIndex = 0;
+            this.dashboard_label.Text = "Dashboard";
+            this.dashboard_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dashboard_label.Click += new System.EventHandler(this.dashboard_label_Click);
             // 
             // label1
             // 
@@ -297,6 +303,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.close_btn);
             this.panel6.Controls.Add(this.upd_teacher_btn);
             this.panel6.Controls.Add(this.add_teacher_btn);
             this.panel6.Controls.Add(this.panel7);
@@ -306,6 +313,19 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 5;
+            // 
+            // close_btn
+            // 
+            this.close_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.close_btn.Image = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.InitialImage = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.Location = new System.Drawing.Point(821, 12);
+            this.close_btn.Name = "close_btn";
+            this.close_btn.Size = new System.Drawing.Size(31, 32);
+            this.close_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_btn.TabIndex = 15;
+            this.close_btn.TabStop = false;
+            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
             // 
             // upd_teacher_btn
             // 
@@ -345,9 +365,9 @@
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Window;
             this.panel7.Controls.Add(this.teachers_table);
-            this.panel7.Location = new System.Drawing.Point(14, 50);
+            this.panel7.Location = new System.Drawing.Point(14, 69);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(838, 501);
+            this.panel7.Size = new System.Drawing.Size(838, 482);
             this.panel7.TabIndex = 1;
             // 
             // teachers_table
@@ -373,13 +393,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.teachers_table.DefaultCellStyle = dataGridViewCellStyle2;
-            this.teachers_table.Location = new System.Drawing.Point(4, 4);
+            this.teachers_table.Location = new System.Drawing.Point(4, 3);
             this.teachers_table.MultiSelect = false;
             this.teachers_table.Name = "teachers_table";
             this.teachers_table.ReadOnly = true;
             this.teachers_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.teachers_table.ShowEditingIcon = false;
-            this.teachers_table.Size = new System.Drawing.Size(831, 494);
+            this.teachers_table.Size = new System.Drawing.Size(831, 475);
             this.teachers_table.TabIndex = 0;
             this.teachers_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.teachers_table_CellContentClick);
             // 
@@ -387,7 +407,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 9);
+            this.label6.Location = new System.Drawing.Point(9, 15);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(223, 29);
             this.label6.TabIndex = 0;
@@ -401,8 +421,9 @@
             this.ClientSize = new System.Drawing.Size(1084, 620);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminTeacherScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Teachers - School Management System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -426,6 +447,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.teachers_table)).EndInit();
             this.ResumeLayout(false);
@@ -437,16 +459,16 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label logout_label;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label student_label;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label dashboard_label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button add_teacher_btn;
@@ -454,11 +476,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label subject_label;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label classes_label;
         private System.Windows.Forms.Button upd_teacher_btn;
         private System.Windows.Forms.DataGridView teachers_table;
+        private System.Windows.Forms.PictureBox close_btn;
     }
 }

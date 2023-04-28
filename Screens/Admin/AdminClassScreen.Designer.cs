@@ -28,29 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.subjects_label = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.logout_label = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.teachers_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.students_label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dashboard_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.close_btn = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.upd_class_btn = new System.Windows.Forms.Button();
             this.del_class_btn = new System.Windows.Forms.Button();
@@ -78,6 +79,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.class_table)).BeginInit();
@@ -103,7 +105,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.CadetBlue;
             this.panel15.Controls.Add(this.pictureBox13);
-            this.panel15.Controls.Add(this.label17);
+            this.panel15.Controls.Add(this.subjects_label);
             this.panel15.Location = new System.Drawing.Point(0, 285);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(214, 44);
@@ -120,16 +122,17 @@
             this.pictureBox13.TabIndex = 2;
             this.pictureBox13.TabStop = false;
             // 
-            // label17
+            // subjects_label
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(139, 13);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 18);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Subjects";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.subjects_label.AutoSize = true;
+            this.subjects_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subjects_label.Location = new System.Drawing.Point(139, 13);
+            this.subjects_label.Name = "subjects_label";
+            this.subjects_label.Size = new System.Drawing.Size(65, 18);
+            this.subjects_label.TabIndex = 0;
+            this.subjects_label.Text = "Subjects";
+            this.subjects_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.subjects_label.Click += new System.EventHandler(this.subjects_label_Click);
             // 
             // panel14
             // 
@@ -167,7 +170,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.CadetBlue;
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.logout_label);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 576);
             this.panel5.Name = "panel5";
@@ -185,22 +188,22 @@
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
-            // label5
+            // logout_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(150, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 18);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Logout";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_label.AutoSize = true;
+            this.logout_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_label.Location = new System.Drawing.Point(150, 12);
+            this.logout_label.Name = "logout_label";
+            this.logout_label.Size = new System.Drawing.Size(54, 18);
+            this.logout_label.TabIndex = 0;
+            this.logout_label.Text = "Logout";
+            this.logout_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.CadetBlue;
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.teachers_label);
             this.panel4.Location = new System.Drawing.Point(0, 185);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 44);
@@ -217,22 +220,23 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
-            // label4
+            // teachers_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(134, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 18);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Teachers";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.teachers_label.AutoSize = true;
+            this.teachers_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teachers_label.Location = new System.Drawing.Point(134, 13);
+            this.teachers_label.Name = "teachers_label";
+            this.teachers_label.Size = new System.Drawing.Size(70, 18);
+            this.teachers_label.TabIndex = 0;
+            this.teachers_label.Text = "Teachers";
+            this.teachers_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.teachers_label.Click += new System.EventHandler(this.teachers_label_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.CadetBlue;
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.students_label);
             this.panel3.Location = new System.Drawing.Point(0, 135);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(214, 44);
@@ -249,22 +253,23 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // label3
+            // students_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(138, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Students";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.students_label.AutoSize = true;
+            this.students_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.students_label.Location = new System.Drawing.Point(138, 12);
+            this.students_label.Name = "students_label";
+            this.students_label.Size = new System.Drawing.Size(66, 18);
+            this.students_label.TabIndex = 0;
+            this.students_label.Text = "Students";
+            this.students_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.students_label.Click += new System.EventHandler(this.students_label_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CadetBlue;
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.dashboard_label);
             this.panel2.Location = new System.Drawing.Point(0, 85);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 44);
@@ -281,16 +286,17 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // dashboard_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(123, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Dashboard";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dashboard_label.AutoSize = true;
+            this.dashboard_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_label.Location = new System.Drawing.Point(123, 13);
+            this.dashboard_label.Name = "dashboard_label";
+            this.dashboard_label.Size = new System.Drawing.Size(81, 18);
+            this.dashboard_label.TabIndex = 0;
+            this.dashboard_label.Text = "Dashboard";
+            this.dashboard_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dashboard_label.Click += new System.EventHandler(this.dashboard_label_Click);
             // 
             // label1
             // 
@@ -306,6 +312,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.close_btn);
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.label6);
@@ -314,6 +321,19 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 5;
+            // 
+            // close_btn
+            // 
+            this.close_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.close_btn.Image = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.InitialImage = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.Location = new System.Drawing.Point(821, 12);
+            this.close_btn.Name = "close_btn";
+            this.close_btn.Size = new System.Drawing.Size(31, 32);
+            this.close_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_btn.TabIndex = 15;
+            this.close_btn.TabStop = false;
+            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
             // 
             // panel8
             // 
@@ -327,9 +347,9 @@
             this.panel8.Controls.Add(this.label8);
             this.panel8.Controls.Add(this.class_name_in);
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(14, 50);
+            this.panel8.Location = new System.Drawing.Point(14, 82);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(254, 556);
+            this.panel8.Size = new System.Drawing.Size(254, 524);
             this.panel8.TabIndex = 2;
             // 
             // upd_class_btn
@@ -341,7 +361,7 @@
             this.upd_class_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.upd_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.upd_class_btn.ForeColor = System.Drawing.Color.CadetBlue;
-            this.upd_class_btn.Location = new System.Drawing.Point(19, 503);
+            this.upd_class_btn.Location = new System.Drawing.Point(17, 478);
             this.upd_class_btn.Name = "upd_class_btn";
             this.upd_class_btn.Size = new System.Drawing.Size(102, 28);
             this.upd_class_btn.TabIndex = 10;
@@ -357,7 +377,7 @@
             this.del_class_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.del_class_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.del_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.del_class_btn.Location = new System.Drawing.Point(130, 503);
+            this.del_class_btn.Location = new System.Drawing.Point(128, 478);
             this.del_class_btn.Name = "del_class_btn";
             this.del_class_btn.Size = new System.Drawing.Size(102, 28);
             this.del_class_btn.TabIndex = 9;
@@ -374,7 +394,7 @@
             this.add_class_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_class_btn.ForeColor = System.Drawing.Color.Azure;
-            this.add_class_btn.Location = new System.Drawing.Point(19, 469);
+            this.add_class_btn.Location = new System.Drawing.Point(17, 444);
             this.add_class_btn.Name = "add_class_btn";
             this.add_class_btn.Size = new System.Drawing.Size(213, 28);
             this.add_class_btn.TabIndex = 8;
@@ -385,17 +405,17 @@
             // class_details_in
             // 
             this.class_details_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_details_in.Location = new System.Drawing.Point(19, 166);
+            this.class_details_in.Location = new System.Drawing.Point(17, 160);
             this.class_details_in.Multiline = true;
             this.class_details_in.Name = "class_details_in";
-            this.class_details_in.Size = new System.Drawing.Size(213, 261);
+            this.class_details_in.Size = new System.Drawing.Size(213, 250);
             this.class_details_in.TabIndex = 5;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(16, 147);
+            this.label9.Location = new System.Drawing.Point(14, 141);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 16);
             this.label9.TabIndex = 4;
@@ -405,7 +425,7 @@
             // 
             this.class_teacher_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.class_teacher_in.FormattingEnabled = true;
-            this.class_teacher_in.Location = new System.Drawing.Point(19, 104);
+            this.class_teacher_in.Location = new System.Drawing.Point(17, 98);
             this.class_teacher_in.Name = "class_teacher_in";
             this.class_teacher_in.Size = new System.Drawing.Size(213, 26);
             this.class_teacher_in.TabIndex = 3;
@@ -414,7 +434,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 84);
+            this.label8.Location = new System.Drawing.Point(14, 78);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(95, 16);
             this.label8.TabIndex = 2;
@@ -423,7 +443,7 @@
             // class_name_in
             // 
             this.class_name_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_name_in.Location = new System.Drawing.Point(19, 37);
+            this.class_name_in.Location = new System.Drawing.Point(17, 31);
             this.class_name_in.Name = "class_name_in";
             this.class_name_in.Size = new System.Drawing.Size(213, 24);
             this.class_name_in.TabIndex = 1;
@@ -432,7 +452,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 17);
+            this.label7.Location = new System.Drawing.Point(14, 11);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 16);
             this.label7.TabIndex = 0;
@@ -442,9 +462,9 @@
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Window;
             this.panel7.Controls.Add(this.class_table);
-            this.panel7.Location = new System.Drawing.Point(289, 50);
+            this.panel7.Location = new System.Drawing.Point(289, 82);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(563, 556);
+            this.panel7.Size = new System.Drawing.Size(563, 524);
             this.panel7.TabIndex = 1;
             // 
             // class_table
@@ -453,30 +473,30 @@
             this.class_table.AllowUserToDeleteRows = false;
             this.class_table.AllowUserToResizeRows = false;
             this.class_table.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.class_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.class_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.class_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.class_table.DefaultCellStyle = dataGridViewCellStyle4;
-            this.class_table.Location = new System.Drawing.Point(4, 4);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.class_table.DefaultCellStyle = dataGridViewCellStyle2;
+            this.class_table.Location = new System.Drawing.Point(4, 3);
             this.class_table.MultiSelect = false;
             this.class_table.Name = "class_table";
             this.class_table.ReadOnly = true;
             this.class_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.class_table.ShowEditingIcon = false;
-            this.class_table.Size = new System.Drawing.Size(556, 549);
+            this.class_table.Size = new System.Drawing.Size(556, 518);
             this.class_table.TabIndex = 0;
             this.class_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.class_table_CellContentClick);
             // 
@@ -484,7 +504,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 9);
+            this.label6.Location = new System.Drawing.Point(9, 15);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(206, 29);
             this.label6.TabIndex = 0;
@@ -498,8 +518,9 @@
             this.ClientSize = new System.Drawing.Size(1084, 620);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminClassScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Classes - School Management System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -523,6 +544,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -536,22 +558,22 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label subjects_label;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label logout_label;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label teachers_label;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label students_label;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label dashboard_label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
@@ -567,5 +589,6 @@
         private System.Windows.Forms.Button add_class_btn;
         private System.Windows.Forms.TextBox class_details_in;
         private System.Windows.Forms.DataGridView class_table;
+        private System.Windows.Forms.PictureBox close_btn;
     }
 }

@@ -36,21 +36,22 @@
             this.label17 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.classes_label = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.teachers_label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.students_label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dashboard_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.close_btn = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.upd_subject_btn = new System.Windows.Forms.Button();
             this.del_subject_btn = new System.Windows.Forms.Button();
@@ -74,6 +75,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subject_table)).BeginInit();
@@ -131,7 +133,7 @@
             // 
             this.panel14.BackColor = System.Drawing.Color.CadetBlue;
             this.panel14.Controls.Add(this.pictureBox12);
-            this.panel14.Controls.Add(this.label16);
+            this.panel14.Controls.Add(this.classes_label);
             this.panel14.Location = new System.Drawing.Point(0, 235);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(214, 44);
@@ -148,16 +150,17 @@
             this.pictureBox12.TabIndex = 2;
             this.pictureBox12.TabStop = false;
             // 
-            // label16
+            // classes_label
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(142, 14);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 18);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Classes";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.classes_label.AutoSize = true;
+            this.classes_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classes_label.Location = new System.Drawing.Point(142, 14);
+            this.classes_label.Name = "classes_label";
+            this.classes_label.Size = new System.Drawing.Size(62, 18);
+            this.classes_label.TabIndex = 0;
+            this.classes_label.Text = "Classes";
+            this.classes_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.classes_label.Click += new System.EventHandler(this.classes_label_Click);
             // 
             // panel5
             // 
@@ -196,7 +199,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.CadetBlue;
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.teachers_label);
             this.panel4.Location = new System.Drawing.Point(0, 185);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 44);
@@ -213,22 +216,23 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
-            // label4
+            // teachers_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(134, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 18);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Teachers";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.teachers_label.AutoSize = true;
+            this.teachers_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teachers_label.Location = new System.Drawing.Point(134, 13);
+            this.teachers_label.Name = "teachers_label";
+            this.teachers_label.Size = new System.Drawing.Size(70, 18);
+            this.teachers_label.TabIndex = 0;
+            this.teachers_label.Text = "Teachers";
+            this.teachers_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.teachers_label.Click += new System.EventHandler(this.teachers_label_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.CadetBlue;
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.students_label);
             this.panel3.Location = new System.Drawing.Point(0, 135);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(214, 44);
@@ -245,22 +249,23 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // label3
+            // students_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(138, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Students";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.students_label.AutoSize = true;
+            this.students_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.students_label.Location = new System.Drawing.Point(138, 12);
+            this.students_label.Name = "students_label";
+            this.students_label.Size = new System.Drawing.Size(66, 18);
+            this.students_label.TabIndex = 0;
+            this.students_label.Text = "Students";
+            this.students_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.students_label.Click += new System.EventHandler(this.students_label_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CadetBlue;
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.dashboard_label);
             this.panel2.Location = new System.Drawing.Point(0, 85);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 44);
@@ -277,16 +282,17 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // dashboard_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(123, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Dashboard";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dashboard_label.AutoSize = true;
+            this.dashboard_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_label.Location = new System.Drawing.Point(123, 13);
+            this.dashboard_label.Name = "dashboard_label";
+            this.dashboard_label.Size = new System.Drawing.Size(81, 18);
+            this.dashboard_label.TabIndex = 0;
+            this.dashboard_label.Text = "Dashboard";
+            this.dashboard_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dashboard_label.Click += new System.EventHandler(this.dashboard_label_Click);
             // 
             // label1
             // 
@@ -302,6 +308,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.close_btn);
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.label6);
@@ -311,6 +318,19 @@
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 6;
             // 
+            // close_btn
+            // 
+            this.close_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.close_btn.Image = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.InitialImage = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.Location = new System.Drawing.Point(821, 12);
+            this.close_btn.Name = "close_btn";
+            this.close_btn.Size = new System.Drawing.Size(31, 32);
+            this.close_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_btn.TabIndex = 15;
+            this.close_btn.TabStop = false;
+            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
+            // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -319,9 +339,9 @@
             this.panel8.Controls.Add(this.add_subject_btn);
             this.panel8.Controls.Add(this.subject_name_in);
             this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(14, 50);
+            this.panel8.Location = new System.Drawing.Point(14, 68);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(254, 556);
+            this.panel8.Size = new System.Drawing.Size(254, 538);
             this.panel8.TabIndex = 2;
             // 
             // upd_subject_btn
@@ -333,7 +353,7 @@
             this.upd_subject_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.upd_subject_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.upd_subject_btn.ForeColor = System.Drawing.Color.CadetBlue;
-            this.upd_subject_btn.Location = new System.Drawing.Point(19, 504);
+            this.upd_subject_btn.Location = new System.Drawing.Point(19, 492);
             this.upd_subject_btn.Name = "upd_subject_btn";
             this.upd_subject_btn.Size = new System.Drawing.Size(102, 28);
             this.upd_subject_btn.TabIndex = 10;
@@ -349,7 +369,7 @@
             this.del_subject_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.del_subject_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.del_subject_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.del_subject_btn.Location = new System.Drawing.Point(130, 504);
+            this.del_subject_btn.Location = new System.Drawing.Point(130, 492);
             this.del_subject_btn.Name = "del_subject_btn";
             this.del_subject_btn.Size = new System.Drawing.Size(102, 28);
             this.del_subject_btn.TabIndex = 9;
@@ -366,7 +386,7 @@
             this.add_subject_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_subject_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_subject_btn.ForeColor = System.Drawing.Color.Azure;
-            this.add_subject_btn.Location = new System.Drawing.Point(19, 470);
+            this.add_subject_btn.Location = new System.Drawing.Point(19, 458);
             this.add_subject_btn.Name = "add_subject_btn";
             this.add_subject_btn.Size = new System.Drawing.Size(213, 28);
             this.add_subject_btn.TabIndex = 8;
@@ -377,7 +397,7 @@
             // subject_name_in
             // 
             this.subject_name_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subject_name_in.Location = new System.Drawing.Point(19, 37);
+            this.subject_name_in.Location = new System.Drawing.Point(19, 44);
             this.subject_name_in.Name = "subject_name_in";
             this.subject_name_in.Size = new System.Drawing.Size(213, 24);
             this.subject_name_in.TabIndex = 1;
@@ -386,7 +406,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 17);
+            this.label7.Location = new System.Drawing.Point(16, 24);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 16);
             this.label7.TabIndex = 0;
@@ -396,9 +416,9 @@
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Window;
             this.panel7.Controls.Add(this.subject_table);
-            this.panel7.Location = new System.Drawing.Point(289, 50);
+            this.panel7.Location = new System.Drawing.Point(289, 68);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(563, 556);
+            this.panel7.Size = new System.Drawing.Size(563, 538);
             this.panel7.TabIndex = 1;
             // 
             // subject_table
@@ -424,13 +444,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.subject_table.DefaultCellStyle = dataGridViewCellStyle2;
-            this.subject_table.Location = new System.Drawing.Point(4, 4);
+            this.subject_table.Location = new System.Drawing.Point(4, 3);
             this.subject_table.MultiSelect = false;
             this.subject_table.Name = "subject_table";
             this.subject_table.ReadOnly = true;
             this.subject_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.subject_table.ShowEditingIcon = false;
-            this.subject_table.Size = new System.Drawing.Size(556, 549);
+            this.subject_table.Size = new System.Drawing.Size(556, 530);
             this.subject_table.TabIndex = 0;
             this.subject_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.subject_table_CellContentClick);
             // 
@@ -438,7 +458,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 9);
+            this.label6.Location = new System.Drawing.Point(9, 15);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(214, 29);
             this.label6.TabIndex = 0;
@@ -452,8 +472,9 @@
             this.ClientSize = new System.Drawing.Size(1084, 620);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminSubjectScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Subjects - School Management System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -477,6 +498,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -493,19 +515,19 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label classes_label;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label teachers_label;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label students_label;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label dashboard_label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
@@ -517,5 +539,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView subject_table;
+        private System.Windows.Forms.PictureBox close_btn;
     }
 }

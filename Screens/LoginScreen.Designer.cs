@@ -30,23 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginScreen));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.close_btn = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.mail_in = new System.Windows.Forms.TextBox();
+            this.password_in = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.signin_btn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.goto_signup = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel1.Controls.Add(this.close_btn);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -54,6 +57,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(318, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // close_btn
+            // 
+            this.close_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.close_btn.Image = global::school_management_system.Properties.Resources.close_fill_light;
+            this.close_btn.InitialImage = global::school_management_system.Properties.Resources.close_fill_dark;
+            this.close_btn.Location = new System.Drawing.Point(275, 12);
+            this.close_btn.Name = "close_btn";
+            this.close_btn.Size = new System.Drawing.Size(31, 32);
+            this.close_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_btn.TabIndex = 14;
+            this.close_btn.TabStop = false;
+            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
             // 
             // label2
             // 
@@ -98,24 +114,24 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Email Address";
             // 
-            // textBox1
+            // mail_in
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(58, 196);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 24);
-            this.textBox1.TabIndex = 3;
+            this.mail_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mail_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mail_in.Location = new System.Drawing.Point(58, 196);
+            this.mail_in.Name = "mail_in";
+            this.mail_in.Size = new System.Drawing.Size(280, 24);
+            this.mail_in.TabIndex = 3;
             // 
-            // textBox2
+            // password_in
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(58, 253);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(280, 24);
-            this.textBox2.TabIndex = 5;
+            this.password_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.password_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_in.Location = new System.Drawing.Point(58, 253);
+            this.password_in.Name = "password_in";
+            this.password_in.PasswordChar = '*';
+            this.password_in.Size = new System.Drawing.Size(280, 24);
+            this.password_in.TabIndex = 5;
             // 
             // label5
             // 
@@ -127,21 +143,22 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Password";
             // 
-            // button1
+            // signin_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(58, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 29);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Sign In";
-            this.button1.UseVisualStyleBackColor = false;
+            this.signin_btn.BackColor = System.Drawing.Color.CadetBlue;
+            this.signin_btn.FlatAppearance.BorderSize = 0;
+            this.signin_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.signin_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.signin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.signin_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signin_btn.ForeColor = System.Drawing.Color.Azure;
+            this.signin_btn.Location = new System.Drawing.Point(58, 305);
+            this.signin_btn.Name = "signin_btn";
+            this.signin_btn.Size = new System.Drawing.Size(103, 29);
+            this.signin_btn.TabIndex = 6;
+            this.signin_btn.Text = "Sign In";
+            this.signin_btn.UseVisualStyleBackColor = false;
+            this.signin_btn.Click += new System.EventHandler(this.signin_btn_Click);
             // 
             // label6
             // 
@@ -154,15 +171,15 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
             // 
-            // linkLabel1
+            // goto_signup
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(298, 313);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(42, 13);
-            this.linkLabel1.TabIndex = 8;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "SignUp";
+            this.goto_signup.AutoSize = true;
+            this.goto_signup.Location = new System.Drawing.Point(298, 313);
+            this.goto_signup.Name = "goto_signup";
+            this.goto_signup.Size = new System.Drawing.Size(42, 13);
+            this.goto_signup.TabIndex = 8;
+            this.goto_signup.TabStop = true;
+            this.goto_signup.Text = "SignUp";
             // 
             // label7
             // 
@@ -180,20 +197,22 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.goto_signup);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.signin_btn);
+            this.Controls.Add(this.password_in);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.mail_in);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login - School Management System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,13 +225,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox mail_in;
+        private System.Windows.Forms.TextBox password_in;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button signin_btn;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel goto_signup;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox close_btn;
     }
 }
 

@@ -97,5 +97,38 @@ namespace school_management_system.Screens.Admin
             _key = 0;
             _loadTeachers();
         }
+
+        private void dashboard_label_Click(object sender, EventArgs e)
+        {
+            AdminDashboardScreen adminDashboardScreen = new AdminDashboardScreen();
+            adminDashboardScreen.Show();
+            this.Close();
+        }
+
+        private void student_label_Click(object sender, EventArgs e)
+        {
+            AdminStudentScreen adminStudentScreen = new AdminStudentScreen();
+            adminStudentScreen.Show();
+            this.Close();
+        }
+
+        private void classes_label_Click(object sender, EventArgs e)
+        {
+            AdminClassScreen adminClassScreen = new AdminClassScreen();
+            adminClassScreen.Show();
+            this.Close();
+        }
+
+        private void subject_label_Click(object sender, EventArgs e)
+        {
+            AdminSubjectScreen adminSubjectScreen = new AdminSubjectScreen();
+            adminSubjectScreen.Show();
+            this.Close();
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

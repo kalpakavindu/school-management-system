@@ -46,6 +46,7 @@ namespace school_management_system.Modals
                 name_in.Text = (string)studentData.Rows[0]["name"];
                 gender_in.SelectedItem = (string)studentData.Rows[0]["gender"];
                 
+                // convert date into DateTime and set it to dob_in.Value
                 string dob = (string)studentData.Rows[0]["dob"];
                 dob_in.Value = DateTime.ParseExact(dob, "dd/MM/yyyy", CultureInfo.InvariantCulture);
 
@@ -59,11 +60,11 @@ namespace school_management_system.Modals
                 mother_work_in.Text = (string)studentData.Rows[0]["mother_work"];
                 mother_contact_in.Text = (string)studentData.Rows[0]["mother_contact"];
 
+                // get class name from class id and set it into class_in.SelectedItem
                 int classId = (int)studentData.Rows[0]["class"];
                 query = "SELECT name FROM ClassTable WHERE id={0}";
                 query = string.Format(query, classId.ToString());
                 DataTable classNameData = connection.GetData(query);
-
                 class_in.SelectedItem = (string)classNameData.Rows[0]["name"];
             }
             catch(Exception ex)
