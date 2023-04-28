@@ -29,82 +29,82 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.manage_teachers_btn = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.manage_students_btn = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -123,6 +123,70 @@
             this.panel1.Size = new System.Drawing.Size(214, 620);
             this.panel1.TabIndex = 1;
             // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel15.Controls.Add(this.pictureBox13);
+            this.panel15.Controls.Add(this.label17);
+            this.panel15.Location = new System.Drawing.Point(0, 285);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(214, 44);
+            this.panel15.TabIndex = 5;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox13.InitialImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
+            this.pictureBox13.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox13.TabIndex = 2;
+            this.pictureBox13.TabStop = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(139, 13);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 18);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Subjects";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.CadetBlue;
+            this.panel14.Controls.Add(this.pictureBox12);
+            this.panel14.Controls.Add(this.label16);
+            this.panel14.Location = new System.Drawing.Point(0, 235);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(214, 44);
+            this.panel14.TabIndex = 4;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::school_management_system.Properties.Resources.community_line_dark;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox12.InitialImage = global::school_management_system.Properties.Resources.community_line_dark;
+            this.pictureBox12.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox12.TabIndex = 2;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(142, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(62, 18);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Classes";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.CadetBlue;
@@ -133,6 +197,17 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(214, 44);
             this.panel5.TabIndex = 4;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::school_management_system.Properties.Resources.logout_circle_line_dark;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.InitialImage = global::school_management_system.Properties.Resources.logout_circle_line_dark;
+            this.pictureBox4.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
             // 
             // label5
             // 
@@ -155,6 +230,17 @@
             this.panel4.Size = new System.Drawing.Size(214, 44);
             this.panel4.TabIndex = 3;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_dark;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.InitialImage = global::school_management_system.Properties.Resources.user_fill_dark;
+            this.pictureBox3.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -176,6 +262,17 @@
             this.panel3.Size = new System.Drawing.Size(214, 44);
             this.panel3.TabIndex = 2;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.InitialImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -196,6 +293,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 44);
             this.panel2.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::school_management_system.Properties.Resources.dashboard_fill_dark;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.InitialImage = global::school_management_system.Properties.Resources.dashboard_fill_dark;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 28);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -250,6 +358,16 @@
             this.panel9.Size = new System.Drawing.Size(258, 131);
             this.panel9.TabIndex = 12;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox8.Location = new System.Drawing.Point(16, 50);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(72, 63);
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -283,6 +401,16 @@
             this.panel8.Size = new System.Drawing.Size(261, 131);
             this.panel8.TabIndex = 11;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_dark;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(16, 50);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(72, 63);
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -309,53 +437,73 @@
             // 
             this.panel13.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel13.Controls.Add(this.pictureBox11);
-            this.panel13.Controls.Add(this.button4);
+            this.panel13.Controls.Add(this.manage_teachers_btn);
             this.panel13.Location = new System.Drawing.Point(461, 344);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(164, 227);
             this.panel13.TabIndex = 10;
             // 
-            // button4
+            // pictureBox11
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkCyan;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.button4.Location = new System.Drawing.Point(13, 170);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(137, 41);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Manage Teachers";
-            this.button4.UseVisualStyleBackColor = false;
+            this.pictureBox11.BackgroundImage = global::school_management_system.Properties.Resources.user_star_fill_darkcyan;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.Location = new System.Drawing.Point(13, 26);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(137, 127);
+            this.pictureBox11.TabIndex = 1;
+            this.pictureBox11.TabStop = false;
+            // 
+            // manage_teachers_btn
+            // 
+            this.manage_teachers_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.manage_teachers_btn.FlatAppearance.BorderSize = 0;
+            this.manage_teachers_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.manage_teachers_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.manage_teachers_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manage_teachers_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_teachers_btn.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.manage_teachers_btn.Location = new System.Drawing.Point(13, 170);
+            this.manage_teachers_btn.Name = "manage_teachers_btn";
+            this.manage_teachers_btn.Size = new System.Drawing.Size(137, 41);
+            this.manage_teachers_btn.TabIndex = 0;
+            this.manage_teachers_btn.Text = "Manage Teachers";
+            this.manage_teachers_btn.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel12.Controls.Add(this.pictureBox10);
-            this.panel12.Controls.Add(this.button3);
+            this.panel12.Controls.Add(this.logout_btn);
             this.panel12.Location = new System.Drawing.Point(688, 344);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(164, 227);
             this.panel12.TabIndex = 9;
             // 
-            // button3
+            // pictureBox10
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkCyan;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.button3.Location = new System.Drawing.Point(13, 170);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 41);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Logout";
-            this.button3.UseVisualStyleBackColor = false;
+            this.pictureBox10.BackgroundImage = global::school_management_system.Properties.Resources.logout_circle_line_darkcyan;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Location = new System.Drawing.Point(13, 26);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(137, 127);
+            this.pictureBox10.TabIndex = 1;
+            this.pictureBox10.TabStop = false;
+            // 
+            // logout_btn
+            // 
+            this.logout_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.logout_btn.FlatAppearance.BorderSize = 0;
+            this.logout_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.logout_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_btn.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.logout_btn.Location = new System.Drawing.Point(13, 170);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(137, 41);
+            this.logout_btn.TabIndex = 0;
+            this.logout_btn.Text = "Logout";
+            this.logout_btn.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
@@ -366,6 +514,16 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(164, 227);
             this.panel10.TabIndex = 9;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_darkcyan;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(13, 26);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(137, 127);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
             // 
             // button1
             // 
@@ -387,27 +545,37 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel11.Controls.Add(this.pictureBox9);
-            this.panel11.Controls.Add(this.button2);
+            this.panel11.Controls.Add(this.manage_students_btn);
             this.panel11.Location = new System.Drawing.Point(238, 344);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(164, 227);
             this.panel11.TabIndex = 8;
             // 
-            // button2
+            // pictureBox9
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkCyan;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.button2.Location = new System.Drawing.Point(13, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 41);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Manage Students";
-            this.button2.UseVisualStyleBackColor = false;
+            this.pictureBox9.BackgroundImage = global::school_management_system.Properties.Resources.graduation_cap_fill_darkcyan;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox9.Location = new System.Drawing.Point(13, 26);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(137, 127);
+            this.pictureBox9.TabIndex = 1;
+            this.pictureBox9.TabStop = false;
+            // 
+            // manage_students_btn
+            // 
+            this.manage_students_btn.BackColor = System.Drawing.Color.DarkCyan;
+            this.manage_students_btn.FlatAppearance.BorderSize = 0;
+            this.manage_students_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.manage_students_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.manage_students_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manage_students_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manage_students_btn.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.manage_students_btn.Location = new System.Drawing.Point(13, 170);
+            this.manage_students_btn.Name = "manage_students_btn";
+            this.manage_students_btn.Size = new System.Drawing.Size(137, 41);
+            this.manage_students_btn.TabIndex = 0;
+            this.manage_students_btn.Text = "Manage Students";
+            this.manage_students_btn.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -448,6 +616,16 @@
             this.panel7.Size = new System.Drawing.Size(207, 131);
             this.panel7.TabIndex = 2;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::school_management_system.Properties.Resources.user_star_fill_dark;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(16, 50);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(72, 63);
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -480,184 +658,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Dashboard";
             // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.CadetBlue;
-            this.panel14.Controls.Add(this.pictureBox12);
-            this.panel14.Controls.Add(this.label16);
-            this.panel14.Location = new System.Drawing.Point(0, 235);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(214, 44);
-            this.panel14.TabIndex = 4;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(142, 14);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 18);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Classes";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.CadetBlue;
-            this.panel15.Controls.Add(this.pictureBox13);
-            this.panel15.Controls.Add(this.label17);
-            this.panel15.Location = new System.Drawing.Point(0, 285);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(214, 44);
-            this.panel15.TabIndex = 5;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(139, 13);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 18);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Subjects";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox8.Location = new System.Drawing.Point(16, 50);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(72, 63);
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_dark;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(16, 50);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(72, 63);
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImage = global::school_management_system.Properties.Resources.user_star_fill_darkcyan;
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox11.Location = new System.Drawing.Point(13, 26);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(137, 127);
-            this.pictureBox11.TabIndex = 1;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::school_management_system.Properties.Resources.logout_circle_line_darkcyan;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox10.Location = new System.Drawing.Point(13, 26);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(137, 127);
-            this.pictureBox10.TabIndex = 1;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_darkcyan;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(13, 26);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(137, 127);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::school_management_system.Properties.Resources.graduation_cap_fill_darkcyan;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox9.Location = new System.Drawing.Point(13, 26);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(137, 127);
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::school_management_system.Properties.Resources.user_star_fill_dark;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(16, 50);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(72, 63);
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox13.InitialImage = global::school_management_system.Properties.Resources.file_paper_2_line_dark;
-            this.pictureBox13.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox13.TabIndex = 2;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::school_management_system.Properties.Resources.community_line_dark;
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.InitialImage = global::school_management_system.Properties.Resources.community_line_dark;
-            this.pictureBox12.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox12.TabIndex = 2;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::school_management_system.Properties.Resources.logout_circle_line_dark;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.InitialImage = global::school_management_system.Properties.Resources.logout_circle_line_dark;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::school_management_system.Properties.Resources.user_fill_dark;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.InitialImage = global::school_management_system.Properties.Resources.user_fill_dark;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.InitialImage = global::school_management_system.Properties.Resources.graduation_cap_fill_dark;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::school_management_system.Properties.Resources.dashboard_fill_dark;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.InitialImage = global::school_management_system.Properties.Resources.dashboard_fill_dark;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 28);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // AdminDashboardScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -671,43 +671,43 @@
             this.Text = "Dashboard - School Management System";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -739,16 +739,16 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button manage_teachers_btn;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button manage_students_btn;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;

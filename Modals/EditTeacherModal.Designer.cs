@@ -28,64 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.university_in = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.degree_in = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.status_in = new System.Windows.Forms.ComboBox();
+            this.dob_in = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.home_in = new System.Windows.Forms.TextBox();
+            this.contact_in = new System.Windows.Forms.TextBox();
+            this.mail_in = new System.Windows.Forms.TextBox();
+            this.name_in = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.gender_in = new System.Windows.Forms.ComboBox();
+            this.del_btn = new System.Windows.Forms.Button();
+            this.upd_btn = new System.Windows.Forms.Button();
+            this.subject_in = new System.Windows.Forms.ComboBox();
+            this.classes_list = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(400, 281);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(369, 24);
-            this.textBox9.TabIndex = 103;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(397, 262);
+            this.label7.Location = new System.Drawing.Point(397, 313);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 16);
             this.label7.TabIndex = 102;
             this.label7.Text = "Subject";
             // 
-            // textBox7
+            // university_in
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(400, 151);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(369, 24);
-            this.textBox7.TabIndex = 101;
+            this.university_in.BackColor = System.Drawing.SystemColors.Window;
+            this.university_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.university_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.university_in.Location = new System.Drawing.Point(400, 151);
+            this.university_in.Name = "university_in";
+            this.university_in.Size = new System.Drawing.Size(369, 24);
+            this.university_in.TabIndex = 101;
             // 
             // label2
             // 
@@ -108,16 +96,15 @@
             this.label1.TabIndex = 99;
             this.label1.Text = "Edit Teacher Details";
             // 
-            // textBox6
+            // degree_in
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(400, 95);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(369, 24);
-            this.textBox6.TabIndex = 98;
+            this.degree_in.BackColor = System.Drawing.SystemColors.Window;
+            this.degree_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.degree_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.degree_in.Location = new System.Drawing.Point(400, 95);
+            this.degree_in.Name = "degree_in";
+            this.degree_in.Size = new System.Drawing.Size(369, 24);
+            this.degree_in.TabIndex = 98;
             // 
             // label12
             // 
@@ -139,26 +126,27 @@
             this.label5.TabIndex = 107;
             this.label5.Text = "Status";
             // 
-            // comboBox1
+            // status_in
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.status_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.status_in.FormattingEnabled = true;
+            this.status_in.Items.AddRange(new object[] {
+            "Pending",
             "Registered",
             "Suspended",
             "Pentioned"});
-            this.comboBox1.Location = new System.Drawing.Point(400, 385);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(368, 26);
-            this.comboBox1.TabIndex = 108;
+            this.status_in.Location = new System.Drawing.Point(400, 385);
+            this.status_in.Name = "status_in";
+            this.status_in.Size = new System.Drawing.Size(368, 26);
+            this.status_in.TabIndex = 108;
             // 
-            // dateTimePicker1
+            // dob_in
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(36, 201);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(276, 22);
-            this.dateTimePicker1.TabIndex = 120;
+            this.dob_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dob_in.Location = new System.Drawing.Point(36, 201);
+            this.dob_in.Name = "dob_in";
+            this.dob_in.Size = new System.Drawing.Size(276, 22);
+            this.dob_in.TabIndex = 120;
             // 
             // label3
             // 
@@ -170,50 +158,46 @@
             this.label3.TabIndex = 119;
             this.label3.Text = "Date of Birth";
             // 
-            // textBox5
+            // home_in
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(36, 384);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(276, 117);
-            this.textBox5.TabIndex = 118;
+            this.home_in.BackColor = System.Drawing.SystemColors.Window;
+            this.home_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.home_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_in.Location = new System.Drawing.Point(36, 384);
+            this.home_in.Multiline = true;
+            this.home_in.Name = "home_in";
+            this.home_in.Size = new System.Drawing.Size(276, 117);
+            this.home_in.TabIndex = 118;
             // 
-            // textBox4
+            // contact_in
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(36, 332);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(276, 24);
-            this.textBox4.TabIndex = 117;
+            this.contact_in.BackColor = System.Drawing.SystemColors.Window;
+            this.contact_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contact_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contact_in.Location = new System.Drawing.Point(36, 332);
+            this.contact_in.Name = "contact_in";
+            this.contact_in.Size = new System.Drawing.Size(276, 24);
+            this.contact_in.TabIndex = 117;
             // 
-            // textBox3
+            // mail_in
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(36, 281);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(276, 24);
-            this.textBox3.TabIndex = 116;
+            this.mail_in.BackColor = System.Drawing.SystemColors.Window;
+            this.mail_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mail_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mail_in.Location = new System.Drawing.Point(36, 281);
+            this.mail_in.Name = "mail_in";
+            this.mail_in.Size = new System.Drawing.Size(276, 24);
+            this.mail_in.TabIndex = 116;
             // 
-            // textBox1
+            // name_in
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(36, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(276, 24);
-            this.textBox1.TabIndex = 114;
+            this.name_in.BackColor = System.Drawing.SystemColors.Window;
+            this.name_in.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.name_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_in.Location = new System.Drawing.Point(36, 96);
+            this.name_in.Name = "name_in";
+            this.name_in.Size = new System.Drawing.Size(276, 24);
+            this.name_in.TabIndex = 114;
             // 
             // label10
             // 
@@ -265,73 +249,82 @@
             this.label11.TabIndex = 109;
             this.label11.Text = "Teacher Name";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Class 1",
-            "Class 2",
-            "Class 3",
-            "Class 4"});
-            this.comboBox2.Location = new System.Drawing.Point(400, 333);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(369, 26);
-            this.comboBox2.TabIndex = 122;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(397, 313);
+            this.label13.Location = new System.Drawing.Point(397, 207);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 16);
+            this.label13.Size = new System.Drawing.Size(56, 16);
             this.label13.TabIndex = 121;
-            this.label13.Text = "Class";
+            this.label13.Text = "Classes";
             // 
-            // comboBox3
+            // gender_in
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.gender_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender_in.FormattingEnabled = true;
+            this.gender_in.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox3.Location = new System.Drawing.Point(36, 148);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(276, 26);
-            this.comboBox3.TabIndex = 123;
+            this.gender_in.Location = new System.Drawing.Point(36, 148);
+            this.gender_in.Name = "gender_in";
+            this.gender_in.Size = new System.Drawing.Size(276, 26);
+            this.gender_in.TabIndex = 123;
             // 
-            // button2
+            // del_btn
             // 
-            this.button2.BackColor = System.Drawing.Color.Salmon;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(596, 457);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 44);
-            this.button2.TabIndex = 126;
-            this.button2.Text = "Delete Teacher";
-            this.button2.UseVisualStyleBackColor = false;
+            this.del_btn.BackColor = System.Drawing.Color.Salmon;
+            this.del_btn.FlatAppearance.BorderSize = 0;
+            this.del_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.del_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.del_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.del_btn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.del_btn.Location = new System.Drawing.Point(596, 457);
+            this.del_btn.Name = "del_btn";
+            this.del_btn.Size = new System.Drawing.Size(173, 44);
+            this.del_btn.TabIndex = 126;
+            this.del_btn.Text = "Delete Teacher";
+            this.del_btn.UseVisualStyleBackColor = false;
+            this.del_btn.Click += new System.EventHandler(this.del_btn_Click);
             // 
-            // button1
+            // upd_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(400, 457);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 44);
-            this.button1.TabIndex = 125;
-            this.button1.Text = "Edit Teacher";
-            this.button1.UseVisualStyleBackColor = false;
+            this.upd_btn.BackColor = System.Drawing.Color.CadetBlue;
+            this.upd_btn.FlatAppearance.BorderSize = 0;
+            this.upd_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.upd_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.upd_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upd_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upd_btn.ForeColor = System.Drawing.Color.Azure;
+            this.upd_btn.Location = new System.Drawing.Point(400, 457);
+            this.upd_btn.Name = "upd_btn";
+            this.upd_btn.Size = new System.Drawing.Size(173, 44);
+            this.upd_btn.TabIndex = 125;
+            this.upd_btn.Text = "Edit Teacher";
+            this.upd_btn.UseVisualStyleBackColor = false;
+            this.upd_btn.Click += new System.EventHandler(this.upd_btn_Click);
+            // 
+            // subject_in
+            // 
+            this.subject_in.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subject_in.FormattingEnabled = true;
+            this.subject_in.Location = new System.Drawing.Point(400, 332);
+            this.subject_in.Name = "subject_in";
+            this.subject_in.Size = new System.Drawing.Size(369, 26);
+            this.subject_in.TabIndex = 127;
+            // 
+            // classes_list
+            // 
+            this.classes_list.BackColor = System.Drawing.SystemColors.Window;
+            this.classes_list.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.classes_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classes_list.Location = new System.Drawing.Point(400, 226);
+            this.classes_list.Multiline = true;
+            this.classes_list.Name = "classes_list";
+            this.classes_list.ReadOnly = true;
+            this.classes_list.Size = new System.Drawing.Size(368, 79);
+            this.classes_list.TabIndex = 128;
             // 
             // EditTeacherModal
             // 
@@ -339,30 +332,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 534);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.classes_list);
+            this.Controls.Add(this.subject_in);
+            this.Controls.Add(this.del_btn);
+            this.Controls.Add(this.upd_btn);
+            this.Controls.Add(this.gender_in);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dob_in);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.home_in);
+            this.Controls.Add(this.contact_in);
+            this.Controls.Add(this.mail_in);
+            this.Controls.Add(this.name_in);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.status_in);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.university_in);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.degree_in);
             this.Controls.Add(this.label12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "EditTeacherModal";
@@ -373,30 +366,30 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox university_in;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox degree_in;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox status_in;
+        private System.Windows.Forms.DateTimePicker dob_in;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox home_in;
+        private System.Windows.Forms.TextBox contact_in;
+        private System.Windows.Forms.TextBox mail_in;
+        private System.Windows.Forms.TextBox name_in;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox gender_in;
+        private System.Windows.Forms.Button del_btn;
+        private System.Windows.Forms.Button upd_btn;
+        private System.Windows.Forms.ComboBox subject_in;
+        private System.Windows.Forms.TextBox classes_list;
     }
 }

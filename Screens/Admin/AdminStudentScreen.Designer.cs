@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -321,6 +322,7 @@
             this.upd_student_btn.TabIndex = 3;
             this.upd_student_btn.Text = "Update Student";
             this.upd_student_btn.UseVisualStyleBackColor = false;
+            this.upd_student_btn.Click += new System.EventHandler(this.upd_student_btn_Click);
             // 
             // show_add_student_btn
             // 
@@ -350,22 +352,38 @@
             // 
             // students_table
             // 
+            this.students_table.AllowUserToAddRows = false;
+            this.students_table.AllowUserToDeleteRows = false;
+            this.students_table.AllowUserToResizeRows = false;
             this.students_table.BackgroundColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Azure;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.students_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.students_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.students_table.DefaultCellStyle = dataGridViewCellStyle2;
             this.students_table.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.students_table.Location = new System.Drawing.Point(3, 3);
+            this.students_table.MultiSelect = false;
             this.students_table.Name = "students_table";
+            this.students_table.ReadOnly = true;
+            this.students_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.students_table.ShowEditingIcon = false;
             this.students_table.Size = new System.Drawing.Size(832, 495);
             this.students_table.TabIndex = 0;
+            this.students_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.students_table_CellContentClick);
             // 
             // label6
             // 
@@ -385,6 +403,7 @@
             this.ClientSize = new System.Drawing.Size(1084, 620);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AdminStudentScreen";
             this.Text = "Manage Students - School Management System";
             this.panel1.ResumeLayout(false);

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -56,8 +58,8 @@
             this.subject_name_in = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.subject_table = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -331,12 +333,13 @@
             this.upd_subject_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.upd_subject_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.upd_subject_btn.ForeColor = System.Drawing.Color.CadetBlue;
-            this.upd_subject_btn.Location = new System.Drawing.Point(19, 470);
+            this.upd_subject_btn.Location = new System.Drawing.Point(19, 504);
             this.upd_subject_btn.Name = "upd_subject_btn";
-            this.upd_subject_btn.Size = new System.Drawing.Size(213, 28);
+            this.upd_subject_btn.Size = new System.Drawing.Size(102, 28);
             this.upd_subject_btn.TabIndex = 10;
-            this.upd_subject_btn.Text = "Update Subject";
+            this.upd_subject_btn.Text = "Update";
             this.upd_subject_btn.UseVisualStyleBackColor = false;
+            this.upd_subject_btn.Click += new System.EventHandler(this.upd_subject_btn_Click);
             // 
             // del_subject_btn
             // 
@@ -352,6 +355,7 @@
             this.del_subject_btn.TabIndex = 9;
             this.del_subject_btn.Text = "Remove";
             this.del_subject_btn.UseVisualStyleBackColor = false;
+            this.del_subject_btn.Click += new System.EventHandler(this.del_subject_btn_Click);
             // 
             // add_subject_btn
             // 
@@ -362,9 +366,9 @@
             this.add_subject_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_subject_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_subject_btn.ForeColor = System.Drawing.Color.Azure;
-            this.add_subject_btn.Location = new System.Drawing.Point(19, 504);
+            this.add_subject_btn.Location = new System.Drawing.Point(19, 470);
             this.add_subject_btn.Name = "add_subject_btn";
-            this.add_subject_btn.Size = new System.Drawing.Size(102, 28);
+            this.add_subject_btn.Size = new System.Drawing.Size(213, 28);
             this.add_subject_btn.TabIndex = 8;
             this.add_subject_btn.Text = "Add";
             this.add_subject_btn.UseVisualStyleBackColor = false;
@@ -397,6 +401,39 @@
             this.panel7.Size = new System.Drawing.Size(563, 556);
             this.panel7.TabIndex = 1;
             // 
+            // subject_table
+            // 
+            this.subject_table.AllowUserToAddRows = false;
+            this.subject_table.AllowUserToDeleteRows = false;
+            this.subject_table.AllowUserToResizeRows = false;
+            this.subject_table.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.subject_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.subject_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.subject_table.DefaultCellStyle = dataGridViewCellStyle2;
+            this.subject_table.Location = new System.Drawing.Point(4, 4);
+            this.subject_table.MultiSelect = false;
+            this.subject_table.Name = "subject_table";
+            this.subject_table.ReadOnly = true;
+            this.subject_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.subject_table.ShowEditingIcon = false;
+            this.subject_table.Size = new System.Drawing.Size(556, 549);
+            this.subject_table.TabIndex = 0;
+            this.subject_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.subject_table_CellContentClick);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -406,15 +443,6 @@
             this.label6.Size = new System.Drawing.Size(214, 29);
             this.label6.TabIndex = 0;
             this.label6.Text = "Manage Subjects";
-            // 
-            // subject_table
-            // 
-            this.subject_table.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.subject_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.subject_table.Location = new System.Drawing.Point(4, 4);
-            this.subject_table.Name = "subject_table";
-            this.subject_table.Size = new System.Drawing.Size(556, 549);
-            this.subject_table.TabIndex = 0;
             // 
             // AdminSubjectScreen
             // 

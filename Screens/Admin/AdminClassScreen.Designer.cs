@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -339,12 +341,13 @@
             this.upd_class_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.upd_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.upd_class_btn.ForeColor = System.Drawing.Color.CadetBlue;
-            this.upd_class_btn.Location = new System.Drawing.Point(19, 469);
+            this.upd_class_btn.Location = new System.Drawing.Point(19, 503);
             this.upd_class_btn.Name = "upd_class_btn";
-            this.upd_class_btn.Size = new System.Drawing.Size(213, 28);
+            this.upd_class_btn.Size = new System.Drawing.Size(102, 28);
             this.upd_class_btn.TabIndex = 10;
             this.upd_class_btn.Text = "Update Class";
             this.upd_class_btn.UseVisualStyleBackColor = false;
+            this.upd_class_btn.Click += new System.EventHandler(this.upd_class_btn_Click);
             // 
             // del_class_btn
             // 
@@ -360,6 +363,7 @@
             this.del_class_btn.TabIndex = 9;
             this.del_class_btn.Text = "Remove Class";
             this.del_class_btn.UseVisualStyleBackColor = false;
+            this.del_class_btn.Click += new System.EventHandler(this.del_class_btn_Click);
             // 
             // add_class_btn
             // 
@@ -370,9 +374,9 @@
             this.add_class_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_class_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_class_btn.ForeColor = System.Drawing.Color.Azure;
-            this.add_class_btn.Location = new System.Drawing.Point(19, 503);
+            this.add_class_btn.Location = new System.Drawing.Point(19, 469);
             this.add_class_btn.Name = "add_class_btn";
-            this.add_class_btn.Size = new System.Drawing.Size(102, 28);
+            this.add_class_btn.Size = new System.Drawing.Size(213, 28);
             this.add_class_btn.TabIndex = 8;
             this.add_class_btn.Text = "Add Class";
             this.add_class_btn.UseVisualStyleBackColor = false;
@@ -445,12 +449,36 @@
             // 
             // class_table
             // 
+            this.class_table.AllowUserToAddRows = false;
+            this.class_table.AllowUserToDeleteRows = false;
+            this.class_table.AllowUserToResizeRows = false;
             this.class_table.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.class_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.class_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.class_table.DefaultCellStyle = dataGridViewCellStyle4;
             this.class_table.Location = new System.Drawing.Point(4, 4);
+            this.class_table.MultiSelect = false;
             this.class_table.Name = "class_table";
+            this.class_table.ReadOnly = true;
+            this.class_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.class_table.ShowEditingIcon = false;
             this.class_table.Size = new System.Drawing.Size(556, 549);
             this.class_table.TabIndex = 0;
+            this.class_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.class_table_CellContentClick);
             // 
             // label6
             // 

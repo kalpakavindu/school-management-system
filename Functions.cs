@@ -31,11 +31,11 @@ namespace school_management_system
             _dataAdapter.Fill(_dataTable);
             return _dataTable;
         }
-        
+
         public int SetData(string query)
         {
             int cnt;
-            if(_connection.State == ConnectionState.Closed)
+            if (_connection.State == ConnectionState.Closed)
             {
                 _connection.Open();
             }

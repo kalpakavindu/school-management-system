@@ -59,7 +59,7 @@ namespace school_management_system.Modals
                     }
                 }catch (Exception ex)
                 {
-                    throw ex;
+                    MessageBox.Show(ex.Message, "Something went wrong", MessageBoxButtons.OK);
                 }
             }
         }

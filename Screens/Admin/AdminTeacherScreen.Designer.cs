@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -50,11 +51,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.upd_teacher_btn = new System.Windows.Forms.Button();
             this.add_teacher_btn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.upd_teacher_btn = new System.Windows.Forms.Button();
             this.teachers_table = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -306,6 +307,23 @@
             this.panel6.Size = new System.Drawing.Size(864, 620);
             this.panel6.TabIndex = 5;
             // 
+            // upd_teacher_btn
+            // 
+            this.upd_teacher_btn.BackColor = System.Drawing.Color.Azure;
+            this.upd_teacher_btn.FlatAppearance.BorderSize = 2;
+            this.upd_teacher_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.upd_teacher_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.upd_teacher_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.upd_teacher_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upd_teacher_btn.ForeColor = System.Drawing.Color.CadetBlue;
+            this.upd_teacher_btn.Location = new System.Drawing.Point(495, 567);
+            this.upd_teacher_btn.Name = "upd_teacher_btn";
+            this.upd_teacher_btn.Size = new System.Drawing.Size(168, 41);
+            this.upd_teacher_btn.TabIndex = 3;
+            this.upd_teacher_btn.Text = "Update Teacher";
+            this.upd_teacher_btn.UseVisualStyleBackColor = false;
+            this.upd_teacher_btn.Click += new System.EventHandler(this.upd_teacher_btn_Click);
+            // 
             // add_teacher_btn
             // 
             this.add_teacher_btn.BackColor = System.Drawing.Color.CadetBlue;
@@ -332,6 +350,39 @@
             this.panel7.Size = new System.Drawing.Size(838, 501);
             this.panel7.TabIndex = 1;
             // 
+            // teachers_table
+            // 
+            this.teachers_table.AllowUserToAddRows = false;
+            this.teachers_table.AllowUserToDeleteRows = false;
+            this.teachers_table.AllowUserToResizeRows = false;
+            this.teachers_table.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.teachers_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.teachers_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.teachers_table.DefaultCellStyle = dataGridViewCellStyle2;
+            this.teachers_table.Location = new System.Drawing.Point(4, 4);
+            this.teachers_table.MultiSelect = false;
+            this.teachers_table.Name = "teachers_table";
+            this.teachers_table.ReadOnly = true;
+            this.teachers_table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.teachers_table.ShowEditingIcon = false;
+            this.teachers_table.Size = new System.Drawing.Size(831, 494);
+            this.teachers_table.TabIndex = 0;
+            this.teachers_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.teachers_table_CellContentClick);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -341,39 +392,6 @@
             this.label6.Size = new System.Drawing.Size(223, 29);
             this.label6.TabIndex = 0;
             this.label6.Text = "Manage Teachers";
-            // 
-            // upd_teacher_btn
-            // 
-            this.upd_teacher_btn.BackColor = System.Drawing.Color.Azure;
-            this.upd_teacher_btn.FlatAppearance.BorderSize = 2;
-            this.upd_teacher_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.upd_teacher_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.upd_teacher_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.upd_teacher_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.upd_teacher_btn.ForeColor = System.Drawing.Color.CadetBlue;
-            this.upd_teacher_btn.Location = new System.Drawing.Point(495, 567);
-            this.upd_teacher_btn.Name = "upd_teacher_btn";
-            this.upd_teacher_btn.Size = new System.Drawing.Size(168, 41);
-            this.upd_teacher_btn.TabIndex = 3;
-            this.upd_teacher_btn.Text = "Update Teacher";
-            this.upd_teacher_btn.UseVisualStyleBackColor = false;
-            // 
-            // teachers_table
-            // 
-            this.teachers_table.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.teachers_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.teachers_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.teachers_table.Location = new System.Drawing.Point(4, 4);
-            this.teachers_table.Name = "teachers_table";
-            this.teachers_table.Size = new System.Drawing.Size(831, 494);
-            this.teachers_table.TabIndex = 0;
             // 
             // AdminTeacherScreen
             // 
