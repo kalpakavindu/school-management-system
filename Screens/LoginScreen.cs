@@ -45,13 +45,13 @@ namespace school_management_system
                         DataTable teacherData = connection.GetData(query);
                         if(teacherData.Rows.Count == 0)
                         {
-                            MessageBox.Show("The email you entered was not found in the database. Plese contact the admin to solve this issue.", "Email not found", MessageBoxButtons.OK);
+                            MessageBox.Show("The email you entered was not found in the database. Plese contact the admin to solve this issue.", "Error", MessageBoxButtons.OK);
                         }
                         else
                         {
                             if (teacherData.Rows[0].IsNull("password"))
                             {
-                                if(MessageBox.Show("You've not registered to your account yet. Please signup with this email.","Not registered yet",MessageBoxButtons.OK) == DialogResult.OK)
+                                if(MessageBox.Show("You've not registered to your account yet. Please signup with this email.","Error",MessageBoxButtons.OK) == DialogResult.OK)
                                 {
                                     SignupScreen signupScreen = new SignupScreen();
                                     signupScreen.Show();
@@ -77,7 +77,7 @@ namespace school_management_system
                     {
                         if (studentData.Rows[0].IsNull("password"))
                         {
-                            if (MessageBox.Show("You've not registered to your account yet. Please signup with this email.", "Not registered yet", MessageBoxButtons.OK) == DialogResult.OK)
+                            if (MessageBox.Show("You've not registered to your account yet. Please signup with this email.", "Error", MessageBoxButtons.OK) == DialogResult.OK)
                             {
                                 SignupScreen signupScreen = new SignupScreen();
                                 signupScreen.Show();
@@ -101,7 +101,7 @@ namespace school_management_system
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Something went wrong", MessageBoxButtons.OK);
+                    MessageBox.Show(ex.Message, "Unknown Error", MessageBoxButtons.OK);
                 }
             }
         }

@@ -14,23 +14,13 @@ namespace school_management_system.Screens
     public partial class SignupScreen : Form
     {
         Functions connection;
+        LoginScreen loginScreen;
 
         public SignupScreen()
         {
             InitializeComponent();
             connection = new Functions();
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            LoginScreen loginScreen = new LoginScreen();
-            loginScreen.Show();
-            this.Close();
-        }
-
-        private void close_btn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            loginScreen = new LoginScreen();
         }
 
         private void signup_btn_Click(object sender, EventArgs e)
@@ -65,7 +55,6 @@ namespace school_management_system.Screens
                             {
                                 if(MessageBox.Show("You've already registered. Please login.","Already have an account",MessageBoxButtons.OK) == DialogResult.OK)
                                 {
-                                    LoginScreen loginScreen = new LoginScreen();
                                     loginScreen.Show();
                                     this.Close();
                                 }
@@ -75,7 +64,6 @@ namespace school_management_system.Screens
                                 query = $"UPDATE TeacherTable SET password='{pass_in.Text}',status='REGISTERED' WHERE id='{(int)teacherData.Rows[0]["id"]}'";
                                 connection.SetData(query);
                                 MessageBox.Show("Well Done! Now you can login with the password and email you used here.", "Done", MessageBoxButtons.OK);
-                                LoginScreen loginScreen = new LoginScreen();
                                 loginScreen.Show();
                                 this.Close();
                             }
@@ -83,12 +71,22 @@ namespace school_management_system.Screens
                     }
                     else
                     {
-                        query = $"UPDATE StudentTable SET password='{pass_in.Text}' WHERE id='{(int)studentData.Rows[0]["id"]}'";
-                        connection.SetData(query);
-                        MessageBox.Show("Well Done! Now you can login with the password and email you used here.", "Done", MessageBoxButtons.OK);
-                        LoginScreen loginScreen = new LoginScreen();
-                        loginScreen.Show();
-                        this.Close();
+                        if (!studentData.Rows[0].IsNull("password"))
+                        {
+                            if (MessageBox.Show("You've already registered. Please login.", "Already have an account", MessageBoxButtons.OK) == DialogResult.OK)
+                            {
+                                loginScreen.Show();
+                                this.Close();
+                            }
+                        }
+                        else
+                        {
+                            query = $"UPDATE StudentTable SET password='{pass_in.Text}' WHERE id='{(int)studentData.Rows[0]["id"]}'";
+                            connection.SetData(query);
+                            MessageBox.Show("Well Done! Now you can login with the password and email you used here.", "Done", MessageBoxButtons.OK);
+                            loginScreen.Show();
+                            this.Close();
+                        }
                     }
                 }
                 catch(Exception ex)
@@ -96,6 +94,18 @@ namespace school_management_system.Screens
                     MessageBox.Show(ex.Message, "Something went wrong", MessageBoxButtons.OK);
                 }
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
+            this.Close();
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
