@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace school_management_system.Screens.Student
 {
-    public partial class StudentAssignmentScreen : Form
+    public partial class StudentAssignmentsPanel : Form
     {
         Functions connection;
         private int _st_id;
         private int _keyToEdit;
 
-        public StudentAssignmentScreen(int id)
+        public StudentAssignmentsPanel(int id)
         {
             InitializeComponent();
             connection = new Functions();
@@ -74,18 +74,6 @@ namespace school_management_system.Screens.Student
             }
         }
 
-        private void close_btn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void dashboard_label_Click(object sender, EventArgs e)
-        {
-            StudentDashboardScreen dashboardScreen = new StudentDashboardScreen(_st_id);
-            dashboardScreen.Show();
-            this.Close();
-        }
-
         private void send_ans_btn_Click(object sender, EventArgs e)
         {
             if(_keyToEdit == 0)
@@ -117,13 +105,6 @@ namespace school_management_system.Screens.Student
             title.Text = assignments_table.SelectedRows[0].Cells[1].Value.ToString();
             desc.Text = assignments_table.SelectedRows[0].Cells[2].Value.ToString();
             _keyToEdit = Convert.ToInt32(assignments_table.SelectedRows[0].Cells[0].Value.ToString());
-        }
-
-        private void logout_label_Click(object sender, EventArgs e)
-        {
-            LoginScreen loginScreen = new LoginScreen();
-            loginScreen.Show();
-            this.Close();
         }
     }
 }

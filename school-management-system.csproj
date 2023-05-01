@@ -77,35 +77,41 @@
     <Compile Include="Modals\EditTeacherModal.Designer.cs">
       <DependentUpon>EditTeacherModal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Admin\AdminClassScreen.cs">
+    <Compile Include="Screens\AdminScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Admin\AdminClassScreen.Designer.cs">
-      <DependentUpon>AdminClassScreen.cs</DependentUpon>
+    <Compile Include="Screens\AdminScreen.Designer.cs">
+      <DependentUpon>AdminScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Admin\AdminDashboardScreen.cs">
+    <Compile Include="Panels\Admin\AdminClassPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Admin\AdminDashboardScreen.Designer.cs">
-      <DependentUpon>AdminDashboardScreen.cs</DependentUpon>
+    <Compile Include="Panels\Admin\AdminClassPanel.Designer.cs">
+      <DependentUpon>AdminClassPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Admin\AdminStudentScreen.cs">
+    <Compile Include="Panels\Admin\AdminDashboardPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Admin\AdminStudentScreen.Designer.cs">
-      <DependentUpon>AdminStudentScreen.cs</DependentUpon>
+    <Compile Include="Panels\Admin\AdminDashboardPanel.Designer.cs">
+      <DependentUpon>AdminDashboardPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Admin\AdminSubjectScreen.cs">
+    <Compile Include="Panels\Admin\AdminStudentPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Admin\AdminSubjectScreen.Designer.cs">
-      <DependentUpon>AdminSubjectScreen.cs</DependentUpon>
+    <Compile Include="Panels\Admin\AdminStudentPanel.Designer.cs">
+      <DependentUpon>AdminStudentPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Admin\AdminTeacherScreen.cs">
+    <Compile Include="Panels\Admin\AdminSubjectPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Admin\AdminTeacherScreen.Designer.cs">
-      <DependentUpon>AdminTeacherScreen.cs</DependentUpon>
+    <Compile Include="Panels\Admin\AdminSubjectPanel.Designer.cs">
+      <DependentUpon>AdminSubjectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Admin\AdminTeacherPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\Admin\AdminTeacherPanel.Designer.cs">
+      <DependentUpon>AdminTeacherPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\LoginScreen.cs">
       <SubType>Form</SubType>
@@ -127,29 +133,41 @@
     <Compile Include="Screens\SignupScreen.Designer.cs">
       <DependentUpon>SignupScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Student\StudentAssignmentScreen.cs">
+    <Compile Include="Panels\Student\StudentAssignmentsPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Student\StudentAssignmentScreen.Designer.cs">
-      <DependentUpon>StudentAssignmentScreen.cs</DependentUpon>
+    <Compile Include="Panels\Student\StudentAssignmentsPanel.Designer.cs">
+      <DependentUpon>StudentAssignmentsPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Student\StudentDashboardScreen.cs">
+    <Compile Include="Panels\Student\StudentDashboardPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Student\StudentDashboardScreen.Designer.cs">
-      <DependentUpon>StudentDashboardScreen.cs</DependentUpon>
+    <Compile Include="Panels\Student\StudentDashboardPanel.Designer.cs">
+      <DependentUpon>StudentDashboardPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Teacher\TeacherAssignmentScreen.cs">
+    <Compile Include="Screens\StudentScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Teacher\TeacherAssignmentScreen.Designer.cs">
-      <DependentUpon>TeacherAssignmentScreen.cs</DependentUpon>
+    <Compile Include="Screens\StudentScreen.Designer.cs">
+      <DependentUpon>StudentScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Teacher\TeacherDashboardScreen.cs">
+    <Compile Include="Screens\TeacherScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Teacher\TeacherDashboardScreen.Designer.cs">
-      <DependentUpon>TeacherDashboardScreen.cs</DependentUpon>
+    <Compile Include="Screens\TeacherScreen.Designer.cs">
+      <DependentUpon>TeacherScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Teacher\TeacherAssignmentPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\Teacher\TeacherAssignmentPanel.Designer.cs">
+      <DependentUpon>TeacherAssignmentPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Teacher\TeacherDashboardPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\Teacher\TeacherDashboardPanel.Designer.cs">
+      <DependentUpon>TeacherDashboardPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Modals\TeacherDetailsModal.cs">
       <SubType>Form</SubType>
@@ -157,11 +175,11 @@
     <Compile Include="Modals\TeacherDetailsModal.Designer.cs">
       <DependentUpon>TeacherDetailsModal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\Teacher\TeacherStudentScreen.cs">
+    <Compile Include="Panels\Teacher\TeacherStudentPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Screens\Teacher\TeacherStudentScreen.Designer.cs">
-      <DependentUpon>TeacherStudentScreen.cs</DependentUpon>
+    <Compile Include="Panels\Teacher\TeacherStudentPanel.Designer.cs">
+      <DependentUpon>TeacherStudentPanel.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Modals\AddStudentModal.resx">
       <DependentUpon>AddStudentModal.cs</DependentUpon>
@@ -178,20 +196,23 @@
     <EmbeddedResource Include="Modals\EditTeacherModal.resx">
       <DependentUpon>EditTeacherModal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Admin\AdminClassScreen.resx">
-      <DependentUpon>AdminClassScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Screens\AdminScreen.resx">
+      <DependentUpon>AdminScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Admin\AdminDashboardScreen.resx">
-      <DependentUpon>AdminDashboardScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Panels\Admin\AdminClassPanel.resx">
+      <DependentUpon>AdminClassPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Admin\AdminStudentScreen.resx">
-      <DependentUpon>AdminStudentScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Panels\Admin\AdminDashboardPanel.resx">
+      <DependentUpon>AdminDashboardPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Admin\AdminSubjectScreen.resx">
-      <DependentUpon>AdminSubjectScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Panels\Admin\AdminStudentPanel.resx">
+      <DependentUpon>AdminStudentPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Admin\AdminTeacherScreen.resx">
-      <DependentUpon>AdminTeacherScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Panels\Admin\AdminSubjectPanel.resx">
+      <DependentUpon>AdminSubjectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Admin\AdminTeacherPanel.resx">
+      <DependentUpon>AdminTeacherPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\LoginScreen.resx">
       <DependentUpon>LoginScreen.cs</DependentUpon>
@@ -212,23 +233,29 @@
     <EmbeddedResource Include="Screens\SignupScreen.resx">
       <DependentUpon>SignupScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Student\StudentAssignmentScreen.resx">
-      <DependentUpon>StudentAssignmentScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Panels\Student\StudentAssignmentsPanel.resx">
+      <DependentUpon>StudentAssignmentsPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Student\StudentDashboardScreen.resx">
-      <DependentUpon>StudentDashboardScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Panels\Student\StudentDashboardPanel.resx">
+      <DependentUpon>StudentDashboardPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Teacher\TeacherAssignmentScreen.resx">
-      <DependentUpon>TeacherAssignmentScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Screens\StudentScreen.resx">
+      <DependentUpon>StudentScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Teacher\TeacherDashboardScreen.resx">
-      <DependentUpon>TeacherDashboardScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Screens\TeacherScreen.resx">
+      <DependentUpon>TeacherScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Teacher\TeacherAssignmentPanel.resx">
+      <DependentUpon>TeacherAssignmentPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\Teacher\TeacherDashboardPanel.resx">
+      <DependentUpon>TeacherDashboardPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modals\TeacherDetailsModal.resx">
       <DependentUpon>TeacherDetailsModal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Screens\Teacher\TeacherStudentScreen.resx">
-      <DependentUpon>TeacherStudentScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Panels\Teacher\TeacherStudentPanel.resx">
+      <DependentUpon>TeacherStudentPanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
