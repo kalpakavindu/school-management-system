@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace school_management_system.Screens.Admin
 {
-    public partial class AdminTeacherScreen : Form
+    public partial class AdminTeacherPanel : Form
     {
         Functions connection;
         private int _key;
 
-        public AdminTeacherScreen()
+        public AdminTeacherPanel()
         { 
             InitializeComponent();
             connection = new Functions();
@@ -91,51 +91,12 @@ namespace school_management_system.Screens.Admin
             _key = 0;
             _loadTeachers();
         }
+       
         private void editTeacherModal_Closed(object sender,FormClosedEventArgs e)
         {
             upd_teacher_btn.Visible = false;
             _key = 0;
             _loadTeachers();
-        }
-
-        private void dashboard_label_Click(object sender, EventArgs e)
-        {
-            AdminDashboardScreen adminDashboardScreen = new AdminDashboardScreen();
-            adminDashboardScreen.Show();
-            this.Close();
-        }
-
-        private void student_label_Click(object sender, EventArgs e)
-        {
-            AdminStudentScreen adminStudentScreen = new AdminStudentScreen();
-            adminStudentScreen.Show();
-            this.Close();
-        }
-
-        private void classes_label_Click(object sender, EventArgs e)
-        {
-            AdminClassScreen adminClassScreen = new AdminClassScreen();
-            adminClassScreen.Show();
-            this.Close();
-        }
-
-        private void subject_label_Click(object sender, EventArgs e)
-        {
-            AdminSubjectScreen adminSubjectScreen = new AdminSubjectScreen();
-            adminSubjectScreen.Show();
-            this.Close();
-        }
-
-        private void close_btn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void logout_label_Click(object sender, EventArgs e)
-        {
-            LoginScreen loginScreen = new LoginScreen();
-            loginScreen.Show();
-            this.Close();
         }
     }
 }

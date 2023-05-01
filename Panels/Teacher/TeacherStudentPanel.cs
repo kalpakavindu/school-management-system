@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace school_management_system
 {
-    public partial class TeacherStudentScreen : Form
+    public partial class TeacherStudentPanel : Form
     {
         Functions connection;
         private int _editKey;
         private int _teacher_id;
 
-        public TeacherStudentScreen(int id)
+        public TeacherStudentPanel(int id)
         {
             InitializeComponent();
             connection = new Functions();
@@ -90,32 +90,6 @@ namespace school_management_system
             _loadStudents();
             show_profile_btn.Visible = false;
             _editKey = 0;
-        }
-
-        private void close_btn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void dashboard_label_Click(object sender, EventArgs e)
-        {
-            TeacherDashboardScreen dashboardScreen = new TeacherDashboardScreen(_teacher_id);
-            dashboardScreen.Show();
-            this.Close();
-        }
-
-        private void assignment_label_Click(object sender, EventArgs e)
-        {
-            TeacherAssignmentScreen assignmentScreen = new TeacherAssignmentScreen(_teacher_id);
-            assignmentScreen.Show();
-            this.Close();
-        }
-
-        private void logout_label_Click(object sender, EventArgs e)
-        {
-            LoginScreen loginScreen = new LoginScreen();
-            loginScreen.Show();
-            this.Close();
         }
     }
 }
