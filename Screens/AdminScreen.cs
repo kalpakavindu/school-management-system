@@ -13,114 +13,94 @@ namespace school_management_system.Screens
 {
     public partial class AdminScreen : Form
     {
-        AdminDashboardPanel dashboardPanel;
-        AdminStudentPanel studentPanel;
-        AdminSubjectPanel subjectPanel;
-        AdminTeacherPanel teacherPanel;
-        AdminClassPanel classPanel;
-
         public AdminScreen()
         {
             InitializeComponent();
-
-            dashboardPanel = new AdminDashboardPanel();
-            studentPanel = new AdminStudentPanel();
-            subjectPanel = new AdminSubjectPanel();
-            teacherPanel = new AdminTeacherPanel();
-            classPanel = new AdminClassPanel();
-
+            AdminDashboardPanel dashboardPanel = new AdminDashboardPanel();
             dashboardPanel.TopLevel = false;
-            studentPanel.TopLevel = false;
-            subjectPanel.TopLevel = false;
-            teacherPanel.TopLevel = false;
-            classPanel.TopLevel = false;
-
+            main_panel.Controls.Clear();
             main_panel.Controls.Add(dashboardPanel);
-            main_panel.Controls.Add(studentPanel);
-            main_panel.Controls.Add(subjectPanel);
-            main_panel.Controls.Add(teacherPanel);
-            main_panel.Controls.Add(classPanel);
-
             dashboardPanel.Visible = true;
-            studentPanel.Visible = false;
-            subjectPanel.Visible = false;
-            teacherPanel.Visible = false;
-            classPanel.Visible = false;
         }
 
         private void dashboard_label_Click(object sender, EventArgs e)
         {
+            AdminDashboardPanel dashboardPanel = new AdminDashboardPanel();
+            dashboardPanel.TopLevel = false;
+
             dashboard.BackColor = Color.Azure;
             students.BackColor = Color.CadetBlue;
             subjects.BackColor = Color.CadetBlue;
             teachers.BackColor = Color.CadetBlue;
             classes.BackColor = Color.CadetBlue;
 
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(dashboardPanel);
             dashboardPanel.Visible = true;
-            studentPanel.Visible = false;
-            subjectPanel.Visible = false;
-            teacherPanel.Visible = false;
-            classPanel.Visible = false;
         }
 
         private void student_label_Click(object sender, EventArgs e)
         {
+            AdminStudentPanel studentPanel = new AdminStudentPanel();
+            studentPanel.TopLevel = false;
+
             dashboard.BackColor = Color.CadetBlue;
             students.BackColor = Color.Azure;
             subjects.BackColor = Color.CadetBlue;
             teachers.BackColor = Color.CadetBlue;
             classes.BackColor = Color.CadetBlue;
 
-            dashboardPanel.Visible = false;
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(studentPanel);
             studentPanel.Visible = true;
-            subjectPanel.Visible = false;
-            teacherPanel.Visible = false;
-            classPanel.Visible = false;
         }
 
         private void teacher_label_Click(object sender, EventArgs e)
         {
+            AdminTeacherPanel teacherPanel = new AdminTeacherPanel();
+            teacherPanel.TopLevel = false;
+
             dashboard.BackColor = Color.CadetBlue;
             students.BackColor = Color.CadetBlue;
             subjects.BackColor = Color.CadetBlue;
             teachers.BackColor = Color.Azure;
             classes.BackColor = Color.CadetBlue;
 
-            dashboardPanel.Visible = false;
-            studentPanel.Visible = false;
-            subjectPanel.Visible = false;
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(teacherPanel);
             teacherPanel.Visible = true;
-            classPanel.Visible = false;
         }
 
         private void classes_label_Click(object sender, EventArgs e)
         {
+            AdminClassPanel classPanel = new AdminClassPanel();
+            classPanel.TopLevel = false;
+
             dashboard.BackColor = Color.CadetBlue;
             students.BackColor = Color.CadetBlue;
             subjects.BackColor = Color.CadetBlue;
             teachers.BackColor = Color.CadetBlue;
             classes.BackColor = Color.Azure;
 
-            dashboardPanel.Visible = false;
-            studentPanel.Visible = false;
-            subjectPanel.Visible = false;
-            teacherPanel.Visible = false;
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(classPanel);
             classPanel.Visible = true;
         }
 
         private void subject_label_Click(object sender, EventArgs e)
         {
+            AdminSubjectPanel subjectPanel = new AdminSubjectPanel();
+            subjectPanel.TopLevel = false;
+
             dashboard.BackColor = Color.CadetBlue;
             students.BackColor = Color.CadetBlue;
             subjects.BackColor = Color.Azure;
             teachers.BackColor = Color.CadetBlue;
             classes.BackColor = Color.CadetBlue;
 
-            dashboardPanel.Visible = false;
-            studentPanel.Visible = false;
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(subjectPanel);
             subjectPanel.Visible = true;
-            teacherPanel.Visible = false;
-            classPanel.Visible = false;
         }
 
         private void logout_label_Click(object sender, EventArgs e)

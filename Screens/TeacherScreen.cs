@@ -12,57 +12,59 @@ namespace school_management_system.Screens
 {
     public partial class TeacherScreen : Form
     {
-        TeacherDashboardPanel dashboardPanel;
-        TeacherStudentPanel studentPanel;
-        TeacherAssignmentPanel assignmentPanel;
+        private int _teacher_id;
 
         public TeacherScreen(int id)
         {
             InitializeComponent();
-            dashboardPanel = new TeacherDashboardPanel(id);
-            studentPanel = new TeacherStudentPanel(id);
-            assignmentPanel = new TeacherAssignmentPanel(id);
+            _teacher_id = id;
+            TeacherDashboardPanel dashboardPanel = new TeacherDashboardPanel(_teacher_id);
             dashboardPanel.TopLevel = false;
-            studentPanel.TopLevel = false;
-            assignmentPanel.TopLevel = false;
-
+            main_panel.Controls.Clear();
             main_panel.Controls.Add(dashboardPanel);
-            main_panel.Controls.Add(assignmentPanel);
-            main_panel.Controls.Add(studentPanel);
-
-            assignmentPanel.Visible = false;
-            studentPanel.Visible = false;
             dashboardPanel.Visible = true;
         }
 
         private void dashboard_label_Click(object sender, EventArgs e)
         {
+            TeacherDashboardPanel dashboardPanel = new TeacherDashboardPanel(_teacher_id);
+            dashboardPanel.TopLevel = false;
+
             dashboard.BackColor = Color.Azure;
             students.BackColor = Color.CadetBlue;
             assignments.BackColor = Color.CadetBlue;
-            assignmentPanel.Visible = false;
-            studentPanel.Visible = false;
+
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(dashboardPanel);
             dashboardPanel.Visible = true;
         }
 
         private void students_lable_Click(object sender, EventArgs e)
         {
+            TeacherStudentPanel studentPanel = new TeacherStudentPanel(_teacher_id);
+            studentPanel.TopLevel = false;
+
             dashboard.BackColor = Color.CadetBlue;
             students.BackColor = Color.Azure;
             assignments.BackColor = Color.CadetBlue;
-            assignmentPanel.Visible = false;
+
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(studentPanel);
             studentPanel.Visible = true;
-            dashboardPanel.Visible = false;
         }
 
         private void assignments_label_Click(object sender, EventArgs e)
         {
+            TeacherAssignmentPanel assignmentPanel = new TeacherAssignmentPanel(_teacher_id);
+            assignmentPanel.TopLevel = false;
+
             dashboard.BackColor = Color.CadetBlue;
             students.BackColor = Color.CadetBlue;
             assignments.BackColor = Color.Azure;
+
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(assignmentPanel);
             assignmentPanel.Visible = true;
-            studentPanel.Visible = false;
-            dashboardPanel.Visible = false;
         }
 
         private void logout_label_Click(object sender, EventArgs e)
