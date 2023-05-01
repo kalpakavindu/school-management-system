@@ -12,36 +12,44 @@ namespace school_management_system.Screens.Student
 {
     public partial class StudentScreen : Form
     {
-        StudentDashboardPanel dashboardScreen;
-        StudentAssignmentsPanel assignmentScreen;
+        private int _st_id;
 
         public StudentScreen(int id)
         {
             InitializeComponent();
-            dashboardScreen = new StudentDashboardPanel(id);
-            assignmentScreen = new StudentAssignmentsPanel(id);
-            dashboardScreen.TopLevel = false;
-            assignmentScreen.TopLevel = false;
-            main_panel.Controls.Add(dashboardScreen);
-            main_panel.Controls.Add(assignmentScreen);
-            dashboardScreen.Visible = true;
-            assignmentScreen.Visible = false;
+            _st_id = id;
+
+            StudentDashboardPanel dashboardPanel = new StudentDashboardPanel(_st_id);
+            dashboardPanel.TopLevel = false;
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(dashboardPanel);
+            dashboardPanel.Visible = true;
         }
 
         private void dashboard_label_Click(object sender, EventArgs e)
         {
+            StudentDashboardPanel dashboardPanel = new StudentDashboardPanel(_st_id);
+            dashboardPanel.TopLevel = false;
+
             assignments.BackColor = Color.CadetBlue;
             dashboard.BackColor = Color.Azure;
-            dashboardScreen.Visible = true;
-            assignmentScreen.Visible = false;
+
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(dashboardPanel);
+            dashboardPanel.Visible = true;
         }
 
         private void assignment_label_Click(object sender, EventArgs e)
         {
+            StudentAssignmentsPanel assignmentsPanel = new StudentAssignmentsPanel(_st_id);
+            assignmentsPanel.TopLevel = false;
+
             assignments.BackColor= Color.Azure;
             dashboard.BackColor = Color.CadetBlue;
-            assignmentScreen.Visible = true;
-            dashboardScreen.Visible = false;
+
+            main_panel.Controls.Clear();
+            main_panel.Controls.Add(assignmentsPanel);
+            assignmentsPanel.Visible = true;
         }
 
         private void logout_label_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -151,15 +152,62 @@ namespace school_management_system.Modals
         {
             try
             {
-                string query = "DELETE FROM TeacherTable WHERE id={0}";
-                query = string.Format(query, _editKey);
-                connection.SetData(query);
-                if(MessageBox.Show("Teacher Deleted Successfully","Success - Deleted successfully",MessageBoxButtons.OK)== DialogResult.OK)
+                string query = $"SELECT * FROM ClassTable WHERE class_teacher={_editKey}";
+                DataTable classDetails = connection.GetData(query);
+                if(classDetails.Rows.Count == 0) {
+                    
+                    _deleteTeacher(_editKey);
+
+                    if (MessageBox.Show("Teacher Deleted Successfully", "Success", MessageBoxButtons.OK) == DialogResult.OK)
+                    {
+                        this.Close();
+                    }
+                }
+                else
                 {
-                    this.Close();
+                    if(MessageBox.Show($"This teacher already has {classDetails.Rows.Count} classes. You need to give them to another teacher.\n\nDo you want to give them to another teacher ?", "Error", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        // change the owners of the classes belongs to this teacher to the first teacher in the table
+                        query = "SELECT * FROM TeacherTable";
+                        DataTable teacherData = connection.GetData(query);
+                        query = $"UPDATE ClassTable SET class_teacher={(int)teacherData.Rows[0]["id"]} WHERE class_teacher={_editKey}";
+                        connection.SetData(query);
+
+                        _deleteTeacher(_editKey);
+                        
+                        if (MessageBox.Show($"All classes belongs to this teacher now belongs to the teacher {(string)teacherData.Rows[0]["name"]}. You can change the class teacher from the classes tab.\n\nTeacher deleleted successfully.","Success",MessageBoxButtons.OK) == DialogResult.OK)
+                        {
+                            this.Close();
+                        }
+                    }
                 }
             }
             catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Something went wrong", MessageBoxButtons.OK);
+            }
+        }
+
+        private void _deleteTeacher(int key)
+        {
+            try
+            {
+                // Delete all assignments belongs to the teacher
+                string query = $"SELECT * FROM AssignmentTable WHERE teacher_id={key}";
+                DataTable assignmentData = connection.GetData(query);
+                foreach (DataRow assignment in assignmentData.Rows)
+                {
+                    query = $"DELETE FROM AnswerTable WHERE assignment_id={(int)assignment["id"]}";
+                    connection.SetData(query);
+                }
+                query = $"DELETE FROM AssignmentTable WHERE teacher_id={key}";
+                connection.SetData(query);
+
+                // delete the teacher
+                query = $"DELETE FROM TeacherTable WHERE id={key}";
+                connection.SetData(query);
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Something went wrong", MessageBoxButtons.OK);
             }
