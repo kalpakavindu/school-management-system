@@ -10,29 +10,17 @@ using System.Windows.Forms;
 
 namespace school_management_system.Screens.Student
 {
-    public partial class StudentDashboardScreen : Form
+    public partial class StudentDashboardPanel : Form
     {
         Functions connection;
         private int _st_id;
 
-        public StudentDashboardScreen(int id)
+        public StudentDashboardPanel(int id)
         {
             InitializeComponent();
             connection = new Functions();
             _st_id = id;
             _loadData();
-        }
-
-        private void close_btn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void assignment_label_Click(object sender, EventArgs e)
-        {
-            StudentAssignmentScreen assignmentScreen = new StudentAssignmentScreen(_st_id);
-            assignmentScreen.Show();
-            this.Close();
         }
 
         private void profile_btn_Click(object sender, EventArgs e)
@@ -88,13 +76,6 @@ namespace school_management_system.Screens.Student
             {
                 MessageBox.Show(ex.Message, "Somthing went wrong", MessageBoxButtons.OK);
             }
-        }
-
-        private void logout_label_Click(object sender, EventArgs e)
-        {
-            LoginScreen loginScreen = new LoginScreen();
-            loginScreen.Show();
-            this.Close();
         }
     }
 }

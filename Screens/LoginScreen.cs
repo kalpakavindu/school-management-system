@@ -1,5 +1,4 @@
 ﻿using school_management_system.Screens;
-using school_management_system.Screens.Admin;
 using school_management_system.Screens.Student;
 using System;
 using System.Collections.Generic;
@@ -29,8 +28,9 @@ namespace school_management_system
                 MessageBox.Show("Please fillout all the feilds.", "Missing credentials", MessageBoxButtons.OK);
             }else if(mail_in.Text == "admin@gmail.com" && password_in.Text == "password")
             {
-                AdminDashboardScreen adminDashboardScreen = new AdminDashboardScreen();
-                adminDashboardScreen.Show();
+                AdminScreen adminScreen = new AdminScreen();
+                adminScreen.FormClosed += adminScreen_Closed;
+                adminScreen.Show();
                 this.Hide();
             }
             else
@@ -62,8 +62,9 @@ namespace school_management_system
                             {
                                 if (password_in.Text == (string)teacherData.Rows[0]["password"])
                                 {
-                                    TeacherDashboardScreen teacherDashboardScreen = new TeacherDashboardScreen((int)teacherData.Rows[0]["id"]);
-                                    teacherDashboardScreen.Show();
+                                    TeacherScreen teacherScreen = new TeacherScreen((int)teacherData.Rows[0]["id"]);
+                                    teacherScreen.FormClosed += teacherScreen_Closed;
+                                    teacherScreen.Show();
                                     this.Hide();
                                 }
                                 else
@@ -88,8 +89,9 @@ namespace school_management_system
                         {
                             if (password_in.Text == (string)studentData.Rows[0]["password"])
                             {
-                                StudentDashboardScreen studentDashboard = new StudentDashboardScreen((int)studentData.Rows[0]["id"]);
-                                studentDashboard.Show();
+                                StudentScreen studentScreen = new StudentScreen((int)studentData.Rows[0]["id"]);
+                                studentScreen.FormClosed += studentScreen_Closed;
+                                studentScreen.Show();
                                 this.Hide();
                             }
                             else
@@ -116,6 +118,19 @@ namespace school_management_system
             SignupScreen signupScreen = new SignupScreen();
             signupScreen.Show();
             this.Hide();
+        }
+
+        private void adminScreen_Closed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+        private void teacherScreen_Closed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+        private void studentScreen_Closed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
