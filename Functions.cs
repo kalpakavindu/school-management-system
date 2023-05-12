@@ -18,7 +18,7 @@ namespace school_management_system
 
         public Functions()
         {
-            _connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Kalpa Kavindu\Documents\SchoolManagementSystem_DotNET_DB.mdf"";Integrated Security=True;Connect Timeout=30";
+            _connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\srv\SqlDatabaseFiles\SchoolManagementSystem_DotNET_DB.mdf;Integrated Security=True;Connect Timeout=30";
             _connection = new SqlConnection(_connectionString);
             _command = new SqlCommand();
             _command.Connection = _connection;
